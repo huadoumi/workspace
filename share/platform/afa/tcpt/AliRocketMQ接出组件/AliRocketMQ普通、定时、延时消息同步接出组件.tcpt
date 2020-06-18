@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>0B25CEBEDEE513C112B26B182B3D7F47</UUID>
+  <Target>cn.com.agree.afa.jcomponent.AliRocketMqClient.outCallSync</Target>
+  <Desp>AliRocketMQ普通、定时、延时消息同步接出组件</Desp>
+  <Group>AliRocketMQ接出组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>AliRocketMQ接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>byte[]</Type>
+      <Desc>请求报文</Desc>
+    </Arg>
+    <Arg>
+      <Name>messageKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>消息关联Id</Desc>
+    </Arg>
+    <Arg>
+      <Name>startDeliverTime</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>消息定时或延时的值,延时消息格式为long,定时消息格式为 yyyy-MM-dd HH:mm:ss 的字符串</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>long</Type>
+      <Desc>响应超时毫秒数</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>future</Name>
+      <Type>cn.com.agree.afa.svc.future.ResponseFuture</Type>
+      <Desc>响应Future</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F0447D41DE3F100867CD1C0A11FA1CBF</UUID>
+  <Target>cn.com.agree.afa.jcomponent.WebSocketCaller.push</Target>
+  <Desp>通过WebSocket向指定设备推送消息</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>向指定设备推送消息</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>websocket服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>deviceId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>pushData</Name>
+      <Type>java.lang.String</Type>
+      <Desc>需要推送的消息</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>isOperationSuccess</Name>
+      <Type>boolean</Type>
+      <Desc>推送操作是否成功</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误码, 当isOperationSuccess为true时该值为null</Desc>
+    </Arg>
+    <Arg>
+      <Name>data</Name>
+      <Type>java.lang.String</Type>
+      <Desc>当isOperationSuccess为true时为推送响应数据, 当isOperationSuccess为false时为失败信息</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7BDCEC28B9835976BB303A425C9B5BC4</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.getIdentityService</Target>
+  <Desp>获取IdentityService</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取Activiti工作流引擎提供的IdentityService</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

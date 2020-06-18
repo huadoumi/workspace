@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>86C7158CED6D4955F6165811F8255571</UUID>
+  <Target>tc.platform.P_DataAccesser.P_callProcedure</Target>
+  <Desp>调用存储过程</Desp>
+  <Group>数据访问组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>调用存储过程, 只能用于RDBMS</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"连接池名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>database</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"数据库名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>procedureName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"存储过程名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"参数列表, [[in,入参值],[out,参数类型(如string)],[inout,出入参值,参数类型(如string)]]"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resultList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"结果列表, [outParam1, outParam2, ... , outParamN]"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_DataAccesser.java</Path>
+</Component>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>A3CFE237575145EC8510A9463471CF25</UUID>
+  <Target>tc.platform.P_HttpClient.doHead</Target>
+  <Desp>发送HTTP HEAD请求</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据HTTP动作解释，Head动作在响应中只返回首部不会返回实体的主体部分，通常用于检查资源的情况</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>url</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"请求URL,例如：\"http://127.0.0.1:8080/xx\""</Desc>
+    </Arg>
+    <Arg>
+      <Name>header</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"HTTP协议头部携带信息字典,可为null"</Desc>
+    </Arg>
+    <Arg>
+      <Name>params</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"请求参数信息"</Desc>
+    </Arg>
+    <Arg>
+      <Name>connectTimeout</Name>
+      <Type>int</Type>
+      <Desc>"连接超时时间(毫秒),小于等于0时默认为5000毫秒"</Desc>
+    </Arg>
+    <Arg>
+      <Name>socketTimeout</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"响应超时时间(毫秒),小于等于0时默认为5000毫秒"</Desc>
+    </Arg>
+    <Arg>
+      <Name>encoding</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"编码，默认为UTF-8"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>status</Name>
+      <Type>java.lang.Integer</Type>
+      <Desc>"响应码"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_HttpClient.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3B748EA683F83DFE0F717A1FA4470A23</UUID>
+  <Target>tc.platform.P_Excel.createSheet</Target>
+  <Desp>创建工作表</Desp>
+  <Group>Excel操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>创建工作表</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"Excel文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sheetName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"工作表名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>index</Name>
+      <Type>int</Type>
+      <Desc>"工作表索引"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Excel.java</Path>
+</Component>

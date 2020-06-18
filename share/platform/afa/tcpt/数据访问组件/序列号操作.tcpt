@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>65D7C3003643DE306F893BB2EC16266E</UUID>
+  <Target>tc.platform.P_DataAccesser.P_getSequence</Target>
+  <Desp>序列号操作</Desp>
+  <Group>数据访问组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>序列号操作, 仅支持Oracle/DB2/Informix三种数据库,对于Informix,dual表是手工创建的</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"连接池名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>database</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"数据库名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sequenceName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"序列名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sequenceLength</Name>
+      <Type>int</Type>
+      <Desc>"序号长度"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>value</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"序号的当前值"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_DataAccesser.java</Path>
+</Component>

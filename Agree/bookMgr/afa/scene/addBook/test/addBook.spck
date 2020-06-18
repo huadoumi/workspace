@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Standard>
+  <Encode>UTF-8</Encode>
+  <RegistType>zookeeper</RegistType>
+  <ProtocolType>abus</ProtocolType>
+  <RequestType>Post</RequestType>
+  <MsgFormat>str</MsgFormat>
+  <RegistHost>10.8.3.161</RegistHost>
+  <RegistPort>2181</RegistPort>
+  <SystemCode>Agree</SystemCode>
+  <SessionTimeout>30000</SessionTimeout>
+  <Req>name=pange</Req>
+  <ReqFieldList/>
+  <ConfigHost>10.8.3.161</ConfigHost>
+  <ConfigPort>2181</ConfigPort>
+  <IsDebug>false</IsDebug>
+  <ServiceCode>bookMgr</ServiceCode>
+  <SceneCode>addBook</SceneCode>
+  <ServiceVersion>1.0.0</ServiceVersion>
+  <SceneVersion>1.0.0</SceneVersion>
+</Standard>

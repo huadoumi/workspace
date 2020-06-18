@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>47C7EA52200ACA2E61C5F6CA5A6E6634</UUID>
+  <Target>cn.com.agree.afa.jcomponent.TuxedoClient.builtinAsyncRequest</Target>
+  <Desp>Tuxedo接出</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>1</Type>
+  <CustomedAsyncMode>1</CustomedAsyncMode>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>往Tuxedo服务器发送请求. 请求内容requestData的格式为[["变量名", "变量值", "occurrence值"], ...], 其中occurrence值可选填, 不填写时默认为0, 如[["STRING", "abc", 0], ["PARAM", "param"]]; 响应内容responseData的格式为[["变量名", "变量值", "occurrence值"], ...], 如[["STRING", "ABC", 0], ["PARAM", "PARAM", 0]]</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>srvIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>serviceName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>请求的远端服务名</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestData</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>请求内容，格式:[['fieldName1', fieldValue1(, item1)], ...]</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>long</Type>
+      <Desc>请求超时时间(毫秒)</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>responseData</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>响应内容，格式:[['fieldName1', fieldValue1, item1], ...]</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

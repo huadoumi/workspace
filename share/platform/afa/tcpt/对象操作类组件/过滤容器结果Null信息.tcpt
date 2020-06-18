@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7CB4DD217644BC299230EE9E005A03B6</UUID>
+  <Target>tc.platform.P_Object.filterNull</Target>
+  <Desp>过滤容器结果Null信息</Desp>
+  <Group>对象操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>以递归的方式将List中的所有null值替换成指定字符串。使用示例：例如已有一个List形式如下：["Ubuntu", null, "Redhat", null, ["Suse", "Fedora", null, "CentOS"] ]。则可以通过本组件，将这个list中原本为null的元素替换成特定字符串"unix-like"。替换后的List如下所示：["Ubuntu", "unix-like", "Redhat", "unix-like", ["Suse", "Fedora", "unix-like", "CentOS"] ]</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resource</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"源数据"</Desc>
+    </Arg>
+    <Arg>
+      <Name>result</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定字符串"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resource</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"转换后的数据"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Object.java</Path>
+</Component>

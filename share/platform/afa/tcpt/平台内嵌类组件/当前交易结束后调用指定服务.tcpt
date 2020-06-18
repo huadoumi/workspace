@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>9624D0A7292407E39D9F7413FC1ABFE9</UUID>
+  <Target>cn.com.agree.afa.jcomponent.TradeInvoker.invokeOnCurTradeFinish</Target>
+  <Desp>当前交易结束后调用指定服务</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>当前交易结束后调用指定服务</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>mc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>应用代码</Desc>
+    </Arg>
+    <Arg>
+      <Name>tc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务代码</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>78C193047595E67677E495B75E917215</UUID>
+  <Target>tc.platform.P_Time.getWeek</Target>
+  <Desp>根据日期获取星期几</Desp>
+  <Group>时间判断类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据日期获取星期几，出参1到7代表周一到周日</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>date</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"字符串形式日期"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>weekday</Name>
+      <Type>int</Type>
+      <Desc>"星期几"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Time.java</Path>
+</Component>

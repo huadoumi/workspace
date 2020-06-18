@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E0B1987E1067799B74C0DE7725F64C4B</UUID>
+  <Target>cn.com.agree.afa.jcomponent.CrontabClient.queryAllCrontab</Target>
+  <Desp>查询所有定时任务</Desp>
+  <Group>定时任务调度类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>host</Name>
+      <Type>java.lang.String</Type>
+      <Desc>ip地址</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>端口</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>response</Name>
+      <Type>java.lang.String</Type>
+      <Desc>响应报文</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

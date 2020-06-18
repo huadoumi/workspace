@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2B7447508D0997D93409D82234111FF8</UUID>
+  <Target>tc.platform.P_Dict.setColumeValue</Target>
+  <Desp>多笔记录列赋值</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>多笔记录列赋值, 以keyList中的子元素作为键、以records中对应索引的子元素(若子元素有null,则以空字符串代替)作为值赋值给context</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>keyList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"容器的键列表, 以该列表中各值作为入参context字典的键值对的键, 如[\"key1\", \"key2\", ...]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>records</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"容器的数据, 为嵌套列表(即子元素的类型也是JavaList, 且子元素列表的长度需与入参keyList的长度相同)"</Desc>
+    </Arg>
+    <Arg>
+      <Name>context</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"容器"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

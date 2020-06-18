@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>EBBF65C93240359489015F3EAB8E0DBC</UUID>
+  <Target>tc.platform.P_Hibernate.sqlDataModify</Target>
+  <Desp>SQL添加更新与删除数据</Desp>
+  <Group>Hibernate操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据SQL添加、更新和删除数据，values参数为：[值1,值2,...]，值的位置对应SQL语句里的?，顺序不能乱</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factoryName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的Factory名,如果为空则从第一个Factory中获取session"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sql</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"SQL语句String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>values</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"添加更新与删除字段的值JavaList,如[VAL1,VAL2]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"事务提交标识Boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"更新的行数int"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Hibernate.java</Path>
+</Component>

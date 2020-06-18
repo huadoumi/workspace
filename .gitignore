@@ -1,0 +1,21 @@
+#eclipse files
+*.class
+
+
+# ignore files
+**/.metadata/*
+**/.settings/*
+**/bin/*
+**/classes/*
+**/target/*
+**/src/main/bcpt/*
+**/src/main/scene/*
+**/src/main/parentScene/*
+**/src/main/childScene/*
+**/src/main/tccScene/*
+
+# not ignore files
+!*.project
+!*.classpath
+!*.gitkeep
+!*.keep

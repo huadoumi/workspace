@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C8BD13AD33886B75577DF6613FADE024</UUID>
+  <Target>tc.platform.P_demo.asyncCpt</Target>
+  <Desp>测试异步组件</Desp>
+  <Group>cate</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>1</Type>
+  <CustomedAsyncMode>1</CustomedAsyncMode>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>测试异步组件</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>aaaa</Name>
+      <Type>java.lang.String</Type>
+      <Desc>aaaa</Desc>
+    </Arg>
+    <Arg>
+      <Name>bbbb</Name>
+      <Type>java.lang.String</Type>
+      <Desc>bbbbb</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>aaaa</Name>
+      <Type>java.util.concurrent.Future</Type>
+      <Desc>aaaa</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/platform/src/main/tcpt/tc/platform/P_demo.java</Path>
+</Component>

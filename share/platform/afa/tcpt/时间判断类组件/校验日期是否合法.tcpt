@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6996133DB8728EBFE2094CF80ED5CF34</UUID>
+  <Target>tc.platform.P_Time.formatCheckTime</Target>
+  <Desp>校验日期是否合法</Desp>
+  <Group>时间判断类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>判断日期是否有效,包括月份的判断,每月天数的判断,年份判断;支持格式: 20081129</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sDate</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"日期"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Time.java</Path>
+</Component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6B8600F0CCF76B2BDBE412A74EDE1AD7</UUID>
+  <Target>cn.com.agree.afa.jcomponent.RocketMqClient.NoReponseoutCallSync</Target>
+  <Desp>RocketMQ普通、延时消息无响应接出组件</Desp>
+  <Group>RocketMQ接出组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>RocketMQ接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>mc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务码</Desc>
+    </Arg>
+    <Arg>
+      <Name>tc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>场景码</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>byte[]</Type>
+      <Desc>请求报文</Desc>
+    </Arg>
+    <Arg>
+      <Name>messageKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>消息关联Id</Desc>
+    </Arg>
+    <Arg>
+      <Name>delayTimeLevel</Name>
+      <Type>int</Type>
+      <Desc>延时推送级别</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

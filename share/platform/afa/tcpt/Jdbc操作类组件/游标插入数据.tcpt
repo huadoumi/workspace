@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F1F9CEFB4F7E2F3ACE5055172E437472</UUID>
+  <Target>tc.platform.P_Jdbc.insertResultSet</Target>
+  <Desp>游标插入数据</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>通过游标在当前游标位置插入新的一行数据, 入参insertData的数据格式为JavaDict, 如{columnName:columeValue, columnIndex:columnValue, ...}, 其中key值可以为表列明或表列索引值(索引值从1开始)</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rs</Name>
+      <Type>java.sql.ResultSet</Type>
+      <Desc>"游标"</Desc>
+    </Arg>
+    <Arg>
+      <Name>insertData</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"插入的数据信息"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

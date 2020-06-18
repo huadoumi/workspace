@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>44818BC1F77BB6FB258F3CD8419E19AF</UUID>
+  <Target>cn.com.agree.afa.jcomponent.SensitiveWord.P_ExtractSSW</Target>
+  <Desp>抽取敏感词</Desp>
+  <Group>敏感词类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sswSource</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>敏感词数据源</Desc>
+    </Arg>
+    <Arg>
+      <Name>mc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>应用代码</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

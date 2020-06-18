@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>4F34D7B6B9D9313C8954E4C05E9B680C</UUID>
+  <Target>tc.platform.P_Object.appendList</Target>
+  <Desp>为容器内的List追加信息</Desp>
+  <Group>对象操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>使用示例：假设目前有__REQ__容器，已有内容如下：{"bank":["CBC","ABC"], "country":[["China","Japan"],["UK","Germany"]]}。现想要为bank这个增加工行ICBC，为country中的亚洲国家增加韩国Korea。则组件的入参应该为：(__REQ__, ["bank", "country"], [-1, 0], ["ICBC", "Korea"])。需要注意到，当listIndex列表中的-1代表为__REQ__对应的"bank"字段的值不是一个嵌套的List。若大于-1则代表其容器里这个字段对应的值是一个嵌套的列表，index标注了第二层List的下标</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__REQ__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"数据字典容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>varList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"要追加的变量名称"</Desc>
+    </Arg>
+    <Arg>
+      <Name>listIndex</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"追加的下标"</Desc>
+    </Arg>
+    <Arg>
+      <Name>valueList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"要追加的值"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Object.java</Path>
+</Component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>AD0E46471D31685165ED3F3DE548A313</UUID>
+  <Target>cn.com.agree.afa.jcomponent.MessageCommon.packMessageToString</Target>
+  <Desp>通用拼包组件,出参为字符串</Desp>
+  <Group>通用拆拼包组件类</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据规则拼包</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>需要拼包容器</Desc>
+    </Arg>
+    <Arg>
+      <Name>configPath</Name>
+      <Type>java.lang.String</Type>
+      <Desc>存放拼包规则的文件路径</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>指定拼包编码</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resutl</Name>
+      <Type>java.lang.String</Type>
+      <Desc>拼包后的报文内容，为字符串类型</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F0B95FD67CCF9600494CC2D5209D3475</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.newGroup</Target>
+  <Desp>创建分组</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>创建分组</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>groupId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>分组的组ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>name</Name>
+      <Type>java.lang.String</Type>
+      <Desc>分组的组名</Desc>
+    </Arg>
+    <Arg>
+      <Name>type</Name>
+      <Type>java.lang.String</Type>
+      <Desc>分组类型，包括assignment和security-role类型</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>group</Name>
+      <Type>org.activiti.engine.identity.Group</Type>
+      <Desc>分组对象</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

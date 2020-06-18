@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8C5521BE5CE2E64BB33C75605645E5E3</UUID>
+  <Target>tc.platform.P_Jdbc.deleteResultSet</Target>
+  <Desp>游标删除数据</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>通过游标来删除指定当前游标指定的数据</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rs</Name>
+      <Type>java.sql.ResultSet</Type>
+      <Desc>"游标"</Desc>
+    </Arg>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"删除行数"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>deletedRows</Name>
+      <Type>int</Type>
+      <Desc>"已成功删除的行数"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

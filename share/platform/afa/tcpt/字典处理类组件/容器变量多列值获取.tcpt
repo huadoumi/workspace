@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>554CF8302E4BC7F38B3C233DC3932EF8</UUID>
+  <Target>tc.platform.P_Dict.getKeyList</Target>
+  <Desp>容器变量多列值获取</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据容器中的key在相应的值列表中获取相应的值, 即把tarKeyList中子元素与srcKeyList中子元素匹配的元素作为key, 并根据该key的索引, 把出__SRC__的第line个子元素列表中该索引的值作为value, 赋值给__TAR__容器</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__SRC__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"数据源容器, 如{\"keys\":[\"key1\", \"key2\", ...], \"values\":[[value0_0, value0_1, ...], ...]}, 注意必须以keys和values字符串作为键, 且两个键对应的值都为JavaList列表"</Desc>
+    </Arg>
+    <Arg>
+      <Name>__TAR__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"数据目标容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>srcKeyList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"源变量列表"</Desc>
+    </Arg>
+    <Arg>
+      <Name>line</Name>
+      <Type>int</Type>
+      <Desc>"行号, 必须大于等于数据源容器__SRC__中的\"values\"字符串为键对应的列表的长度"</Desc>
+    </Arg>
+    <Arg>
+      <Name>tarKeyList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"目标变量列表(如果为null，则和源列表srcKeyList相同)"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

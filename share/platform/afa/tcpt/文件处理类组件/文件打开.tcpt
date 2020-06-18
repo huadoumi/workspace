@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>72FD15640050A99B6C0EFF02EF110060</UUID>
+  <Target>tc.platform.P_File.P_openFile</Target>
+  <Desp>文件打开</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据参数打开文件，返回BufferedReader引用</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"字符集名称，如果输入null则使用默认编码"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>reader</Name>
+      <Type>java.io.BufferedReader</Type>
+      <Desc>"返回的BufferedReader引用"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>9FB75188676D90BFAC60E5401564C4E9</UUID>
+  <Target>tc.platform.P_File.getFileSize</Target>
+  <Desp>获取文件目录大小</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取指定的目录或者文件的大小</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件或目录名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>unit</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"单位(K/M/G)"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sizeStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件的大小"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

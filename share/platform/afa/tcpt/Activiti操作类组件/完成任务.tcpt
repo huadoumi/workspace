@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>221BD5CDF9EDFF2176E9E57647DB3F84</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.completeTask</Target>
+  <Desp>完成任务</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>完成任务</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>taskId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>任务ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>variables</Name>
+      <Type>java.util.Map</Type>
+      <Desc>变量</Desc>
+    </Arg>
+    <Arg>
+      <Name>localScope</Name>
+      <Type>boolean</Type>
+      <Desc>是否为本地范围流程</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

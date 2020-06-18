@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>094F9D81985DC15EB3BF4B6812575DDE</UUID>
+  <Target>tc.platform.P_Jdbc.callProcedure</Target>
+  <Desp>调用存储过程</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>调用存储过程，参数列表用法：[["in",入参值],["out","参数类型(如string)"],["inout",出入参值,"参数类型(如string)"]]；返回的结果信息中，如果只有IN参数没有OUT和INOUT参数，结果为空[]；有OUT或者INOUT出参结果：[100,"xx"]；出参类型为以下之一：string、int、short、long、float、double、byte、boolean、date、time</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的数据库连接池名，如果不填则从第一个连接池中获取连接String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>procname</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"存储过程名称String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>parasList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"输入参数列表JavaList，用法：[[\"in\",入参值],[\"out\",\"参数类型(如string)\"],[\"inout\",出入参值,\"参数类型(如string)\"]]"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"结果信息JavaList，如果只有IN参数没有OUT和INOUT参数，结果为空[]；有OUT或者INOUT出参结果：[100,\"xx\"]"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

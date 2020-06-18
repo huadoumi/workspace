@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6058741534691D8705D5D7000EC3ED5F</UUID>
+  <Target>tc.platform.P_FileTransfer.download</Target>
+  <Desp>下载文件</Desp>
+  <Group>文件传输类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据AFP协议下载文件</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>remoteHost</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"远程主机ip地址"</Desc>
+    </Arg>
+    <Arg>
+      <Name>remotePort</Name>
+      <Type>int</Type>
+      <Desc>"远程主机端口"</Desc>
+    </Arg>
+    <Arg>
+      <Name>localSaveFile</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"下载文件本地保存路径"</Desc>
+    </Arg>
+    <Arg>
+      <Name>remoteDir</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"远程文件所在目录"</Desc>
+    </Arg>
+    <Arg>
+      <Name>remoteFileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"远程文件名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>downloadTimeoutMillis</Name>
+      <Type>int</Type>
+      <Desc>"下载超时时间(毫秒)"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_FileTransfer.java</Path>
+</Component>

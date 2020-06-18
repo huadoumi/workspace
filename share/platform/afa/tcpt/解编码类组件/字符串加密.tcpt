@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>0D92CF16E8788F6742640CEA24AB7740</UUID>
+  <Target>tc.platform.P_CodecTools.md5Encrypt</Target>
+  <Desp>字符串加密</Desp>
+  <Group>解编码类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将输入的字符串按照MD5加密算法进行加密,加密后的结果在返回的list[3]中</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>inStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"被加密的字符串"</Desc>
+    </Arg>
+    <Arg>
+      <Name>charsetName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"加密使用的字符集,默认为GBK"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>outStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"加密后的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>加密失败</RET0>
+    <RET1>加密成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_CodecTools.java</Path>
+</Component>

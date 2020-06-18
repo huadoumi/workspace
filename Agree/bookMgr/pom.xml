@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.com.agree.afa</groupId>
+		<artifactId>Agree</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>bookMgr</artifactId>
+	<packaging>jar</packaging>
+	<name>bookMgr</name>
+	<description>bookMgr</description>
+	<properties>
+		<AppCode>bookMgr</AppCode>
+	</properties>
+	<dependencies>
+	</dependencies>
+</project>

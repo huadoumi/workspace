@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>228BD31E72D63E29EB36E248D0CAE666</UUID>
+  <Target>tc.platform.P_Communition.getHostIP</Target>
+  <Desp>获取主机IP地址</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取主机IP地址</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ifname</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"网络接口"</Desc>
+    </Arg>
+    <Arg>
+      <Name>type</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"返回的ip格式类型,例如ipv4 or ipv6"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>hostIP</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"返回主机IP地址"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>异常</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Communition.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>9A7A80627E5B2941D54CAA37DFA9F2C1</UUID>
+  <Target>tc.platform.P_File.md5Calculate</Target>
+  <Desp>计算文件的md5</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>计算文件的md5,最后返回由文件内容转化成的md5字符串</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件编码字符集，参数传入null则为系统默认编码方式"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>md5str</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件的md5值"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

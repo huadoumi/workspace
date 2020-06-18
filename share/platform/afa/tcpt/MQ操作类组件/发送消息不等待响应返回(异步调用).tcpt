@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>676D9E7A72686FC0077E351C88F35A0B</UUID>
+  <Target>cn.com.agree.afa.jcomponent.MqCaller.outCallAsync</Target>
+  <Desp>发送消息不等待响应返回(异步调用)</Desp>
+  <Group>MQ操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发送消息不等待响应返回(异步调用)</ToolTip>
+  <InArgs>
+    <Total>7</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>MQ接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>msgId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>消息ID号</Desc>
+    </Arg>
+    <Arg>
+      <Name>correlationID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>关联ID号</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>java.lang.String</Type>
+      <Desc>请求报文</Desc>
+    </Arg>
+    <Arg>
+      <Name>flag</Name>
+      <Type>int</Type>
+      <Desc>发送失败是否向平台发送失败消息标志，0：不发送， 1：发送</Desc>
+    </Arg>
+    <Arg>
+      <Name>tradeID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>发送失败时触发的交易的标识， 格式：mc:tc</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorMsg</Name>
+      <Type>java.lang.String</Type>
+      <Desc>发送失败后向平台发送的消息</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

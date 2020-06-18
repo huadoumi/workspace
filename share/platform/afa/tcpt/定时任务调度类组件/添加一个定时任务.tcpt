@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>31E53928C133AE24CB8C4F4EF9FF68FA</UUID>
+  <Target>cn.com.agree.afa.jcomponent.CrontabClient.addaCrontab</Target>
+  <Desp>添加一个定时任务</Desp>
+  <Group>定时任务调度类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>host</Name>
+      <Type>java.lang.String</Type>
+      <Desc>ip地址</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>端口</Desc>
+    </Arg>
+    <Arg>
+      <Name>crontab</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>定时任务</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D3E287E31FD7A528A911DFE255540901</UUID>
+  <Target>cn.com.agree.afa.jcomponent.TradeInvoker.isFutureDone</Target>
+  <Desp>判断Future是否已完成</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>判断Future是否已完成</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>future</Name>
+      <Type>cn.com.agree.afa.util.future.IFuture</Type>
+      <Desc>future</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>done</Name>
+      <Type>boolean</Type>
+      <Desc>是否完成</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

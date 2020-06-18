@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>47D8625BDB4C1A8D7D9D69FECF55640A</UUID>
+  <Target>tc.Agree.bookMgr.A_Packages.A_parseKV</Target>
+  <Desp>解析键值对</Desp>
+  <Group>通用业务</Group>
+  <Level>-1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>source</Name>
+      <Type>Object</Type>
+      <Desc>"源数据"</Desc>
+    </Arg>
+    <Arg>
+      <Name>container</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"容器"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\projects\Agree\bookMgr\componentSourceCode\tc\Agree\bookMgr\A_Packages.java</Path>
+</Component>

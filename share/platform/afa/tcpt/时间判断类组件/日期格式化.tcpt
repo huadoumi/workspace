@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>0D69F26F3FB1085D15A7FBA24AB0C11D</UUID>
+  <Target>tc.platform.P_Time.formatDate</Target>
+  <Desp>日期格式化</Desp>
+  <Group>时间判断类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>日期格式化,sDate:日期 支持格式:20090701、200971、2009年7月1日、2009年07月01日、2009/7/1、2009/07/01、2009-2-2、2009-02-02、2009.2.2、2009.02.02、2009-7-01、2009-07-1
+               sFmt:格式化字符串 支持格式:'yyyy-mm-dd'、'yyyy年mm月dd日'、'yyyy/mm/dd'、'yyyy/mm/dd'、'yyyy.mm.dd'、'dd/mm/yyyy'、'mm.dd.yyyy'</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sDate</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"日期"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sFmt</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"格式化字符串"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"格式化后的日期"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Time.java</Path>
+</Component>

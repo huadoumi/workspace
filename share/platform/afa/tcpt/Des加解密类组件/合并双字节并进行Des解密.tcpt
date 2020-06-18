@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>301E99A844BD239ED2E67DD0AA53B683</UUID>
+  <Target>tc.platform.P_Des.toSBCSAndDesDecrypt</Target>
+  <Desp>合并双字节并进行Des解密</Desp>
+  <Group>Des加解密类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>合并双字节并进行Des解密，对应desEncryptAndToDBCS组件</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>enc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"加密后的字符串"</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"密钥"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>str</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"解密后的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Des.java</Path>
+</Component>

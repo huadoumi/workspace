@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>07E0A8E70B9F026D475A79C0E6D58B37</UUID>
+  <Target>cn.com.agree.afa.jcomponent.MqCaller.receiveFileBySegment</Target>
+  <Desp>分组接收文件</Desp>
+  <Group>MQ操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>分组接收文件</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>grpId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>需要接受的MQ消息的grpID</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>int</Type>
+      <Desc>获取接收报文的超时时间，单位：毫秒</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>java.lang.String</Type>
+      <Desc>分组接收文件的响应结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

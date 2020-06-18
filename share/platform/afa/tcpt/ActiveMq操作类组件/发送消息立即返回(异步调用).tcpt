@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F2469F8BBA449F46CAF66F5838C1D5BF</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActiveMqCaller.outCallASync</Target>
+  <Desp>发送消息立即返回(异步调用)</Desp>
+  <Group>ActiveMq操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发送消息立即返回(异步调用)</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>MQ接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>java.lang.String</Type>
+      <Desc>请求报文</Desc>
+    </Arg>
+    <Arg>
+      <Name>correlationID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>关联ID号</Desc>
+    </Arg>
+    <Arg>
+      <Name>messageID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>消息ID号</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>83B999923CED2BE8CD42100CBE6C8FB8</UUID>
+  <Target>cn.com.agree.afa.jcomponent.GlobalErrorHolder.setGlobalErrorWithAttach</Target>
+  <Desp>设置全局错误(带附加信息)</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>设置全局错误(带附加信息)</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>errorType</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>错误类型</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorCode</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>错误代码</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorMsg</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>错误信息</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorLevel</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>错误级别</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorAttachment</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>附加信息</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

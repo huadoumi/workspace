@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3890A0881E5054C5712D67341827C402</UUID>
+  <Target>tc.bank.B_XMLParser.B_ParseToJD</Target>
+  <Desp>解析XML拼装字典</Desp>
+  <Group>报文解析器</Group>
+  <Level>1</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将XML解析成数据字典</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>origMsg</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"未解析的XML报文内容"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>msgJD</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"解析后的数据字典"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\bank\componentSourceCode\tc\bank\B_XMLParser.java</Path>
+</Component>

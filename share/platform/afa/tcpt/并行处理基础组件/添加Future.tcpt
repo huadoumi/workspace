@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>500CB629ED154469CEA99D26B6A63257</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ConcurrencyHelper.addFuture</Target>
+  <Desp>添加Future</Desp>
+  <Group>并行处理基础组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>添加一个待处理的Future到处理器中</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>future</Name>
+      <Type>cn.com.agree.afa.util.future.IFuture</Type>
+      <Desc>future</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

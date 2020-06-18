@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>B848A53BC7B81490AB73DA81EB30149B</UUID>
+  <Target>tc.platform.P_File.crtFixLenFile</Target>
+  <Desp>创建定长文件</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>按照指定的格式和提供的数据域创建固定格式的文件(扩展字典当前只支持在文件头写总笔数{\"sumflag\" : True})</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>lenFmt</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"长度格式"</Desc>
+    </Arg>
+    <Arg>
+      <Name>data</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"数据域"</Desc>
+    </Arg>
+    <Arg>
+      <Name>extCxt</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"扩展字典"</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件编码字符集，如果传入为null则使用默认编码"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

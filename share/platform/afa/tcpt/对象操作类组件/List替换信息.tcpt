@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>AE0A4FA6D4E5C5E8022922E3B0424B56</UUID>
+  <Target>tc.platform.P_Object.replaceListValue</Target>
+  <Desp>List替换信息</Desp>
+  <Group>对象操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>替换容器内List的信息，例如已有容器__REQ__: {"小明": ["男", 18, "学生"], "小红": ["女", 18, "学生"]}。现需要把小明由学生身份改为老师，并将小红的年龄改为30。则组件入参如下(__REQ__, ["小明"，"小红"], [2, 1], ["老师", 30])</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__REQ__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"数据字典容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>varList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"要替换的变量名称列表"</Desc>
+    </Arg>
+    <Arg>
+      <Name>listIndex</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"要替换的下标列表"</Desc>
+    </Arg>
+    <Arg>
+      <Name>valueList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"要替换的值列表"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Object.java</Path>
+</Component>

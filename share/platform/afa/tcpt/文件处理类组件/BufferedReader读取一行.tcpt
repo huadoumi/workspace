@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3DD3C04CDBFC6FA6579339A9B124ADC3</UUID>
+  <Target>tc.platform.P_File.P_readFileLine</Target>
+  <Desp>BufferedReader读取一行</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据传入的BufferedReader引用，读取文件内容一行</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>reader</Name>
+      <Type>java.io.BufferedReader</Type>
+      <Desc>"BufferedReader引用"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>lineStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"读取的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

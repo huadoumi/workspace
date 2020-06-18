@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2986D682C1831DDFE361C42BFABC0DAA</UUID>
+  <Target>tc.platform.P_Dict.keyCheck</Target>
+  <Desp>容器变量检查</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>检查入参字典inContext中key对应value的类型和长度, 需要检查的键值对在入参列表paramList中指明</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>inContext</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"请求容器, 如{\"key1\":value1, \"key2\":value2, ...}"</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"检查容器中变量的列表,如：[[\"key1\",类型(,长度)],[\"key2\",类型(,长度)]...]"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>判断变量正确</RET1>
+    <RET2>判断变量错误</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D109D9BBF40C7088ADF22F575FD369F5</UUID>
+  <Target>cn.com.agree.afa.jcomponent.RegistryBroker.getSubsMap</Target>
+  <Desp>查询订阅关系</Desp>
+  <Group>注册中心交互组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>查询某一个系统下某topic对应的订阅关系，同步等待结果返回,subsMapList格式[[发布方系统码,发布方系统中文名称，是否可用,订阅方系统码，订阅方系统中文名称,超时时间,主题码,主题中文名称，优先级,场景码,场景版本,场景中文名称，服务码，服务版本，服务中文名称，接口码],[...]]</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>systemCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>被查询系统标识码</Desc>
+    </Arg>
+    <Arg>
+      <Name>topicCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>被查询主题标识码</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>int</Type>
+      <Desc>等待超时响应时间 单位 : 毫秒</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>subsMapList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>subsMapList,格式[[发布方系统码,发布方系统中文名称，是否可用,订阅方系统码，订阅方系统中文名称,超时时间,主题码,主题中文名称，优先级,场景码,场景版本,场景中文名称，服务码，服务版本，服务中文名称，接口码],[...]]</Desc>
+    </Arg>
+    <Arg>
+      <Name>listCount</Name>
+      <Type>int</Type>
+      <Desc>list元素个数</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

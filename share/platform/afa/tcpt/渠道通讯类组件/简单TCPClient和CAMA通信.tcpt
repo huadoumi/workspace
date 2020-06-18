@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>A382100C4EF59D9FEF1DB9EDF4FB6CD5</UUID>
+  <Target>tc.platform.P_Communition.simpleCliSentToCama</Target>
+  <Desp>简单TCPClient和CAMA通信</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>简单TCPClient和CAMA通信</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>address</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"IP地址或Unix域套接字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>"端口"</Desc>
+    </Arg>
+    <Arg>
+      <Name>tmo</Name>
+      <Type>int</Type>
+      <Desc>"通信超时,单位:秒"</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"报文编码"</Desc>
+    </Arg>
+    <Arg>
+      <Name>pckStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"报文字符串"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>超时异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Communition.java</Path>
+</Component>

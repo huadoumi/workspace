@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>842E2C274845BC200063BFDDEF1DC8E7</UUID>
+  <Target>tc.platform.P_Dict.validKeyValue</Target>
+  <Desp>容器值比较</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据列表keyList中的key值比较字典dict1与dict2中对应keyList的值是否相等</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>keyList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"容器变量比较的键列表, 如：[\"key1\",\"key2\",\"key3\"...]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dict1</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"比较容器,如：{\"key1\":value1_1, \"key2\":value1_2....}"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dict2</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"被比较容器,如：{\"key1\":value2_1,\"key2\":value2_2....}"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>判断变量错误</RET0>
+    <RET1>判断变量正确</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

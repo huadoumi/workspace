@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>80A1243C1C53BD91AB2889247B2B8909</UUID>
+  <Target>tc.platform.P_Excel.writeCellData</Target>
+  <Desp>写入单元格内容</Desp>
+  <Group>Excel操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>写入Excel单元格里面的内容</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"Excel文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sheetName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"工作表名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>rowNum</Name>
+      <Type>int</Type>
+      <Desc>"单元格行号"</Desc>
+    </Arg>
+    <Arg>
+      <Name>columnNum</Name>
+      <Type>int</Type>
+      <Desc>"单元格列号"</Desc>
+    </Arg>
+    <Arg>
+      <Name>contents</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"待写入的内容"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Excel.java</Path>
+</Component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>86F383D263722717BFA9577BB81A374F</UUID>
+  <Target>tc.platform.P_Mybatis.P_commit</Target>
+  <Desp>数据库事务提交</Desp>
+  <Group>Mybatis操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>提交当前session的事务</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factory</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"mybatis工厂，如果为null或空字符串，则取第一个"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Mybatis.java</Path>
+</Component>

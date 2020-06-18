@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>1E8F834C1962154227B45F550BEC5761</UUID>
+  <Target>tc.platform.P_Des.byteToDoubleByte</Target>
+  <Desp>拆分单字节</Desp>
+  <Group>Des加解密类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>单字节拆分为双字节</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>srcBytes</Name>
+      <Type>byte[]</Type>
+      <Desc>"需要拆分的字节数组"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>byte[]</Type>
+      <Desc>"拆分后的字节数组"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Des.java</Path>
+</Component>

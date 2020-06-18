@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>1E8C713EE7296B00359141DC4BE3A07D</UUID>
+  <Target>cn.com.agree.afa.jcomponent.SdkHttp.asyncPutData</Target>
+  <Desp>异步put操作</Desp>
+  <Group>对接springCloud组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>异步put操作</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>headers</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>http报文头</Desc>
+    </Arg>
+    <Arg>
+      <Name>url</Name>
+      <Type>java.lang.String</Type>
+      <Desc>url</Desc>
+    </Arg>
+    <Arg>
+      <Name>data</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>http表单格式报文体，key value形式存储</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutInMill</Name>
+      <Type>long</Type>
+      <Desc>调用超时时间,单位毫秒</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.util.future.IFuture</Type>
+      <Desc>返回结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>A7DB240D53D4FA1F6457C4086A54A63A</UUID>
+  <Target>tc.bank.B_XMLParser.B_unPackXmltoDict</Target>
+  <Desp>解析XML报文到Dict</Desp>
+  <Group>报文解析器</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>解析收到的HTTP请求到javaDict</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>recv</Name>
+      <Type>byte[]</Type>
+      <Desc>"接收报文"</Desc>
+    </Arg>
+    <Arg>
+      <Name>encoding</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"字符编码"</Desc>
+    </Arg>
+    <Arg>
+      <Name>req</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"接收容器"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\bank\componentSourceCode\tc\bank\B_XMLParser.java</Path>
+</Component>

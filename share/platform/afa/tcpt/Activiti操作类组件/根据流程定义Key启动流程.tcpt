@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>25AA7EF01EE2B6324370B4A7A8CFDE13</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.startProcessInstanceByKey</Target>
+  <Desp>根据流程定义Key启动流程</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据流程定义Key启动流程</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>processDefinitionKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>流程定义Key</Desc>
+    </Arg>
+    <Arg>
+      <Name>businessKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>业务Key</Desc>
+    </Arg>
+    <Arg>
+      <Name>variables</Name>
+      <Type>java.util.Map</Type>
+      <Desc>启动流程变量</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>processInstance</Name>
+      <Type>org.activiti.engine.runtime.ProcessInstance</Type>
+      <Desc>流程实例</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

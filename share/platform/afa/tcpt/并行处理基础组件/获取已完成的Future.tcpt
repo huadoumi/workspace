@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C39615ED5C6CD2520039EBC1A0BB669C</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ConcurrencyHelper.select</Target>
+  <Desp>获取已完成的Future</Desp>
+  <Group>并行处理基础组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取已完成的Future。返回一个列表，表示所有已完成的Future</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>关键字</Desc>
+    </Arg>
+    <Arg>
+      <Name>min</Name>
+      <Type>int</Type>
+      <Desc>最小的获取数</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeout</Name>
+      <Type>long</Type>
+      <Desc>超时（毫秒）</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>size</Name>
+      <Type>int</Type>
+      <Desc>获取的数量</Desc>
+    </Arg>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>结果集</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>超时</RET2>
+  </Logic>
+  <Path></Path>
+</Component>

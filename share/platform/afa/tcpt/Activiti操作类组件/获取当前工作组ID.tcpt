@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>58782FCC6159DAD1A5F2404CBFE318F4</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.getGid</Target>
+  <Desp>获取当前工作组ID</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取当前工作组ID</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>gid</Name>
+      <Type>int</Type>
+      <Desc>当前工作组ID</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/lib/afa-jcomponent-2.5.jar</Path>
+</Component>

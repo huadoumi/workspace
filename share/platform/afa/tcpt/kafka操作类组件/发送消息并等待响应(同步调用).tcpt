@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>957EAC098C9D7AB88DD6AF9D796FBD36</UUID>
+  <Target>cn.com.agree.afa.jcomponent.KafkaCaller.outCallSync</Target>
+  <Desp>发送消息并等待响应(同步调用)</Desp>
+  <Group>kafka操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发送消息并等待响应(同步调用)</ToolTip>
+  <InArgs>
+    <Total>7</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>KAFKA接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeout</Name>
+      <Type>int</Type>
+      <Desc>等待超时响应时间 单位 : 毫秒</Desc>
+    </Arg>
+    <Arg>
+      <Name>topic</Name>
+      <Type>java.lang.String</Type>
+      <Desc>主题</Desc>
+    </Arg>
+    <Arg>
+      <Name>partition</Name>
+      <Type>java.lang.String</Type>
+      <Desc>分区</Desc>
+    </Arg>
+    <Arg>
+      <Name>timestamp</Name>
+      <Type>java.lang.String</Type>
+      <Desc>时间戳</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>byte[]</Type>
+      <Desc>key值</Desc>
+    </Arg>
+    <Arg>
+      <Name>value</Name>
+      <Type>byte[]</Type>
+      <Desc>value值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>java.lang.String</Type>
+      <Desc>响应结果（消息偏移量）</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

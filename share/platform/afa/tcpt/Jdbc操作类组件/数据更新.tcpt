@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>98526146E3FB2EC9785EA8FE4C85C809</UUID>
+  <Target>tc.platform.P_Jdbc.dmlUpdate</Target>
+  <Desp>数据更新</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>更新指定条件指定库表的指定列值，条件信息的用法为：[["tid","=","20090101","and"],["pid","=","ppasdf"]] = (列1=值1 and 列2=值2)，更新影响的笔数放到list[3]中</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的数据库连接池名，如果不填则从第一个连接池中获取连接String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>tableName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"表名String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>colInfos</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"列信息JavaList，如：[[\"COL1\",VAL1],[\"COL2\",VAL2]]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>condition</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"条件信息JavaList，如：[\"列\",\"=\",值]或者[[\"列1\",\"=\",值1,\"and\"],[\"列2\",\"&lt;\",值2]]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"提交标识Boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>int</Type>
+      <Desc>"影响到的笔数int"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

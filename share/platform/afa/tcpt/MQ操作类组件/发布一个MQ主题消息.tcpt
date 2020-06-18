@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>110911016CF450900300CB21287E7DDA</UUID>
+  <Target>cn.com.agree.afa.jcomponent.MqCaller.publishTopic</Target>
+  <Desp>发布一个MQ主题消息</Desp>
+  <Group>MQ操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发布一个MQ主题消息</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>java.lang.String</Type>
+      <Desc>需要发布的报文内容</Desc>
+    </Arg>
+    <Arg>
+      <Name>retain</Name>
+      <Type>int</Type>
+      <Desc>发布报文是否保留 1：保留 0:不保留</Desc>
+    </Arg>
+    <Arg>
+      <Name>expiry</Name>
+      <Type>int</Type>
+      <Desc>保留时间，单位为秒,当值为-1时，表示永久保留</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

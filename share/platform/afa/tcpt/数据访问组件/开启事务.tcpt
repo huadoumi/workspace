@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3B29FBB1667E3A065E9EB63C94E2FABB</UUID>
+  <Target>tc.platform.P_DataAccesser.P_beginTransaction</Target>
+  <Desp>开启事务</Desp>
+  <Group>数据访问组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>开启事务, 暂不支持NoSQL</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"连接池名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>database</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"数据库名字"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_DataAccesser.java</Path>
+</Component>

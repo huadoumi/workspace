@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>CE66FD45C691E36B231A68F889B2506A</UUID>
+  <Target>tc.platform.P_Dict.multDictUnite</Target>
+  <Desp>字典循环合并</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将源数据容器中的所有key值循环追加目的容器中，用于输出指定长度指定顺序的所有源容器的合集，原容器中所有的key值若在目的容器中存在则拼接到目的容器对应的key值中，若不存在对应的key赋值[""]*i并append源容器的key值，若目的容器有源容器中没有的key则自动追加""，循环变量从0开始，目的容器会被初始化为空</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>srcDict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"源数据容器(单笔)"</Desc>
+    </Arg>
+    <Arg>
+      <Name>cycleTime</Name>
+      <Type>int</Type>
+      <Desc>"当前循环次数, 当源数据容器srcDict中有key时，而目的数据容器dctDict中的没有key值时，则在目的数据容器新增以key为键的键值对，且该key对应的value值为包含cycleTime个空字符串的JavaList对象（当cycleTime=0时先将入参dctDict目的容器清空再新增键值对）"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dctDict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"目的数据容器(合集), 如{\"key0\":[value0_0, value0_1, ...], ...}"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>判断变量错误</RET0>
+    <RET1>判断变量正确</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

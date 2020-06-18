@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>080AFF89249E6D15801D18DE0C89FEBE</UUID>
+  <Target>tc.platform.P_Des.des3Decrypt</Target>
+  <Desp>Des3解密字节数组</Desp>
+  <Group>Des加解密类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>Des3解密字节数组，对应des3Encrypt组件</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dest</Name>
+      <Type>byte[]</Type>
+      <Desc>"Des3加密后的数组"</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"密钥"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>str</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"解密后得到的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Des.java</Path>
+</Component>

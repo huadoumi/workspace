@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>5C8E1DC1517E4E5A32C582085F92B2AF</UUID>
+  <Target>tc.platform.P_Hibernate.sqlDelete</Target>
+  <Desp>SQL删除数据</Desp>
+  <Group>Hibernate操作类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>原生SQL删除数据，删除指定条件的记录,其中条件信息的用法为：[["COL1","=",VAL1,"AND"],["COL2","!=",VAL2,null]] = COL1=VAL1 AND COL2=VAL2</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factoryName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的Factory名,如果为空则从第一个Factory中获取session"</Desc>
+    </Arg>
+    <Arg>
+      <Name>tableName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"表名String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>condition</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"条件的值JavaList，如：[\"列\",\"=\",值]或[[\"列1\",\"=\",值1,\"and\"],[\"列2\",\"&lt;\",值2]]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"事务提交标识Boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"删除的行数int"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Hibernate.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>39D24C1F1527EFC845CBF20D0866E397</UUID>
+  <Target>cn.com.agree.afa.jcomponent.MqCaller.subcribeTopic</Target>
+  <Desp>获取MQ订阅主题的消息内容</Desp>
+  <Group>MQ操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取MQ订阅主题的消息内容</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>int</Type>
+      <Desc>获取订阅主题的消息超时时间 ，单位：毫秒</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>subcribeTopic</Name>
+      <Type>java.lang.String</Type>
+      <Desc>MQ订阅主题的消息内容</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

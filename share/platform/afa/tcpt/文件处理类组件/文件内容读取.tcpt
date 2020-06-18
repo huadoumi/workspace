@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>5338FCC49B1C9F4EFB81F97FBBE33646</UUID>
+  <Target>tc.platform.P_File.readContent</Target>
+  <Desp>文件内容读取</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>读取文件的前几行，默认行数为0:表示读整个文件</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>getLinesNo</Name>
+      <Type>int</Type>
+      <Desc>"读取文件前几行数据"</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"字符集，传入null则用默认编码"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>strFromFile</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"读到的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>文件内容为空</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

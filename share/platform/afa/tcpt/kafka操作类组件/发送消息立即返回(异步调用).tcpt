@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C8A5B433D1240580263D264F71BDCFD3</UUID>
+  <Target>cn.com.agree.afa.jcomponent.KafkaCaller.outCallASync</Target>
+  <Desp>发送消息立即返回(异步调用)</Desp>
+  <Group>kafka操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发送消息立即返回(异步调用)</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>KAFKA接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>topic</Name>
+      <Type>java.lang.String</Type>
+      <Desc>主题</Desc>
+    </Arg>
+    <Arg>
+      <Name>partition</Name>
+      <Type>java.lang.String</Type>
+      <Desc>分区</Desc>
+    </Arg>
+    <Arg>
+      <Name>timestamp</Name>
+      <Type>java.lang.String</Type>
+      <Desc>时间戳</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>byte[]</Type>
+      <Desc>key值</Desc>
+    </Arg>
+    <Arg>
+      <Name>value</Name>
+      <Type>byte[]</Type>
+      <Desc>value值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

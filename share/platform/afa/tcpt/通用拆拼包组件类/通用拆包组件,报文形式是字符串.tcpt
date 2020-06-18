@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E92127B3D2C9DD90C9329EE30FCD4AE0</UUID>
+  <Target>cn.com.agree.afa.jcomponent.MessageCommon.unpackMessageByString</Target>
+  <Desp>通用拆包组件,报文形式是字符串</Desp>
+  <Group>通用拆拼包组件类</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>跟据报文拆包规则拆包文到上下文</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>存放目标内容字典</Desc>
+      <DefaultParam>__REQ__</DefaultParam>
+    </Arg>
+    <Arg>
+      <Name>configPath</Name>
+      <Type>java.lang.String</Type>
+      <Desc>存放拆包功能规则的配置文件路径</Desc>
+    </Arg>
+    <Arg>
+      <Name>data</Name>
+      <Type>java.lang.String</Type>
+      <Desc>需要拆包的报文内容</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>报文编码,为空默认utf-8</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

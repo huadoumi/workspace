@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NATP>
+	<Encode>UTF-8</Encode>
+	<MC>bookMgr</MC>
+	<TC>aaaa</TC>
+	<ProtocolNumber>3</ProtocolNumber>
+	<Host>127.0.0.1</Host>
+	<Port>8088</Port>
+	<Timeout>30000</Timeout>
+	<HasResponse>true</HasResponse>
+	<ReqFieldList/>
+	<RspFieldList/>
+</NATP>

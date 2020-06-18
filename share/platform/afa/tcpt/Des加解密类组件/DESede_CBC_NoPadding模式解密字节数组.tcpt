@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>DB7932E528A5F9CCB5DD0B2B535718D4</UUID>
+  <Target>tc.platform.P_Des.des3CbcNoPaddingDecrypt</Target>
+  <Desp>DESede_CBC_NoPadding模式解密字节数组</Desp>
+  <Group>Des加解密类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>DESede/CBC/NoPadding模式解密字节数组</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dest</Name>
+      <Type>byte[]</Type>
+      <Desc>"加密后的字节数组"</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"密钥"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>src</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"解密后的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Des.java</Path>
+</Component>

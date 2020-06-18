@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>26E5DB8B91A0CB2F3CA1941DEF826957</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ATSTransactionBroker.confirm</Target>
+  <Desp>提交全局事务</Desp>
+  <Group>ATS相关组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>提交全局事务</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>async</Name>
+      <Type>boolean</Type>
+      <Desc>是否异步提交</Desc>
+      <DefaultParam>true</DefaultParam>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

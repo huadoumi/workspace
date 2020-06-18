@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>87D1E328D38B1BD2450DE5F203B3ED19</UUID>
+  <Target>cn.com.agree.afa.jcomponent.WebSocketCaller.isLocalAddress</Target>
+  <Desp>判断是否是交易所运行的主机的地址</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>判断指定ip:port是否是交易所运行的主机的ip:port地址，参数ipAddr即所要验证的ip地址, port即websocket服务监听的端口</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>websocket服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>host</Name>
+      <Type>java.lang.String</Type>
+      <Desc>ip地址</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>端口</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>isLocalAddr</Name>
+      <Type>boolean</Type>
+      <Desc>是否是交易所运行的主机的ip:port地址</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误码, 当isLocalAddr为true时该值为null</Desc>
+    </Arg>
+    <Arg>
+      <Name>msg</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误信息, 当isLocalAddr为true时为null</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

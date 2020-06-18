@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F9E4F6F32BD45BCFCC923F9A97E2884A</UUID>
+  <Target>tc.platform.P_Object.createObject</Target>
+  <Desp>创建信息的数据对象</Desp>
+  <Group>对象操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>按照数据对象的描述list创建数据对象,数据对象描述list的格式为[["名称",类型(JavaDict, JavaList)], ...]。例如想要创建一个名称为container的JavaDict，则参数为[["container", {}]]，若为JavaList，则参数为[["container", []]]</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>argContext</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"数据字典容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dataObjList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"数据对象描述list"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Object.java</Path>
+</Component>

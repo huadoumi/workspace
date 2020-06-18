@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>702C9B3CC06F34878AF258B178F8313C</UUID>
+  <Target>tc.platform.P_Jdbc.fetchData</Target>
+  <Desp>fetch游标获取结果集</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>fetch游标获取结果集</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rs</Name>
+      <Type>java.sql.ResultSet</Type>
+      <Desc>"游标"</Desc>
+    </Arg>
+    <Arg>
+      <Name>fetchSize</Name>
+      <Type>int</Type>
+      <Desc>"获取结果集的行数"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"结果集"</Desc>
+    </Arg>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"总笔数"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>fetch结束</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

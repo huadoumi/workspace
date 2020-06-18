@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>54B1937805110CE707A77933D633F443</UUID>
+  <Target>tc.platform.P_JudgmentStatement.boolFrame</Target>
+  <Desp>布尔判断框架</Desp>
+  <Group>判断语句类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>布尔判断框架,返回ture/false</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>bool</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>"需要判断的对象"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_JudgmentStatement.java</Path>
+</Component>

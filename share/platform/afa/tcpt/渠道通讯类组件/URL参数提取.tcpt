@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2ACA92C62A92B534D465EF97B85D3F6B</UUID>
+  <Target>tc.platform.P_HttpCodec.P_ExtractParameters</Target>
+  <Desp>URL参数提取</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>从URL中提取参数部分到指定的javadict，多个相同的key存放在javalist中</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"存放的字典"</Desc>
+    </Arg>
+    <Arg>
+      <Name>path</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"URL"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_HttpCodec.java</Path>
+</Component>

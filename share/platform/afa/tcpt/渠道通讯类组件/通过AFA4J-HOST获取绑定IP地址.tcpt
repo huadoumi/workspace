@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>96FADA9021A62D9979DA276840F6A95E</UUID>
+  <Target>tc.platform.P_Communition.getAFAIpByHost</Target>
+  <Desp>通过AFA4J-HOST获取绑定IP地址</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>多网卡时，支持通过AFA4J-HOST获取绑定IP地址</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>hostIP</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"AFA4J-HOST绑定的IP地址"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Communition.java</Path>
+</Component>

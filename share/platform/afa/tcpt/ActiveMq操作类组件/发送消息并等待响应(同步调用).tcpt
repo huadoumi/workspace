@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E480B7CCA4E055787B067F15DCD1278E</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActiveMqCaller.outCallSync</Target>
+  <Desp>发送消息并等待响应(同步调用)</Desp>
+  <Group>ActiveMq操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发送消息并等待响应(同步调用)</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>MQ接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>messageID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>消息ID号</Desc>
+    </Arg>
+    <Arg>
+      <Name>correlationID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>关联ID号</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>int</Type>
+      <Desc>等待超时响应时间 单位 : 毫秒</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>java.lang.String</Type>
+      <Desc>请求报文</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>java.lang.String</Type>
+      <Desc>同步调用发送消息的响应结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

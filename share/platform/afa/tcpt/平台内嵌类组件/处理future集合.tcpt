@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>EDB7EFBD634DEAAF380448EBFF055C52</UUID>
+  <Target>cn.com.agree.afa.jcomponent.TradeInvoker.doAllFutures</Target>
+  <Desp>处理future集合</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>处理一堆future的返回情况,最多堵塞最大future超时时间,使用时先检验，结果可能返回{[0,Throwable.getMessage()],[1,result],[2,"调用超时"]},正常[1,result],超时[2,"调用超时"],其他异常[0,Throwable.getMessage()]</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>futures</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>future集合</Desc>
+    </Arg>
+    <Arg>
+      <Name>results</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>result集合</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>errorCount</Name>
+      <Type>int</Type>
+      <Desc>future非正常结束的个数</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

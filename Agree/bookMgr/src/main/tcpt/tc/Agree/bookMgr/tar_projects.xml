@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dataModule" default="build" basedir=".">
+	<property name="projects_dir" value="${output_dir}/projects" />
+	<property name="conf_dir"
+		value="${projects_dir}/${projectName}/apps/${appName}/conf" />
+	<property name="doc_dir"
+		value="${projects_dir}/${projectName}/apps/${appName}/doc" />
+	<property name="edm_dir"
+		value="${projects_dir}/${projectName}/apps/${appName}/data_model" />
+	<property name="tcpt_dir"
+		value="${projects_dir}/${projectName}/apps/${appName}/tech_component" />
+	<property name="bcpt_dir"
+		value="${projects_dir}/${projectName}/apps/${appName}/business_component" />
+	<property name="service_dir"
+		value="${projects_dir}/${projectName}/apps/${appName}/trade" />
+	<property name="dest_file" value="${output_dir}/projects.tar" />
+	<property name="gid_file"
+		value="${projects_dir}/${projectName}/apps/${appName}/${group_id}.gid" />
+
+	<tstamp>
+		<format property="touch.time" pattern="yyyy/MM/dd hh:mm" />
+	</tstamp>
+
+
+	<condition property="tcptDepFileExist">
+		<available
+			file="${WORKSPACE}/functionModule/technologyComponent/projects/${projectName}/${appName}/dependencies"
+			type="dir" />
+	</condition>
+	<condition property="bcptFileExist">
+		<available
+			file="${WORKSPACE}/functionModule/businessComponent/projects/${projectName}/${appName}"
+			type="dir" />
+	</condition>
+	<condition property="serviceFileExist">
+		<available file="${WORKSPACE}/${projectName}/${appName}" />
+	</condition>
+
+	<fileset id="edmJarFile" dir="${WORKSPACE}/dataModule/dataObject/output">
+		<include name="edm.app.${projectName}.${appName}*.jar" />
+	</fileset>
+	<fileset id="tcptAppDepJarFile"
+		dir="${WORKSPACE}/functionModule/technologyComponent/projects/${projectName}/${appName}/dependencies">
+		<include name="*.jar" />
+	</fileset>
+	<fileset id="tcptJarFile"
+		dir="${WORKSPACE}/functionModule/technologyComponent/output">
+		<include name="tc.app.${projectName}.${appName}*.jar" />
+	</fileset>
+	<fileset id="bcptJarFile"
+		dir="${WORKSPACE}/functionModule/businessComponent/projects/${projectName}/${appName}">
+		<include name="**/compileResult/bc/*.jar" />
+	</fileset>
+	<fileset id="serviceJarFile" dir="${WORKSPACE}/${projectName}/${appName}">
+		<include name="**/flow/compileResult/*.jar" />
+	</fileset>
+
+	<target name="clean">
+		<echo
+			message="=============== ${touch.time} Excute Command: tar -projects ${projectName}.${appName} -output ${output_dir} ===============" />
+		<delete dir="${projects_dir}" />
+		<delete file="${dest_file}" />
+		<mkdir dir="${projects_dir}" />
+		<mkdir dir="${conf_dir}" />
+		<mkdir dir="${doc_dir}" />
+		<mkdir dir="${edm_dir}" />
+		<mkdir dir="${tcpt_dir}" />
+		<mkdir dir="${bcpt_dir}" />
+		<mkdir dir="${service_dir}" />
+	</target>
+	<target name="createWorkdGroup" if="${hasWorkGroup}">
+		<copy file="${gid_template}" tofile="${gid_file}" />
+	</target>
+
+	<target name="copyEdm">
+		<copy todir="${edm_dir}" flatten="true">
+			<fileset refid="edmJarFile" />
+		</copy>
+	</target>
+	<target name="copyTcpt" if="tcptDepFileExist">
+		<copy todir="${tcpt_dir}" flatten="true">
+			<fileset refid="tcptAppDepJarFile" />
+		</copy>
+		<copy todir="${tcpt_dir}" flatten="true">
+			<fileset refid="tcptJarFile" />
+		</copy>
+	</target>
+	<target name="copyBcpt" if="bcptFileExist">
+		<copy todir="${bcpt_dir}" flatten="true">
+			<fileset refid="bcptJarFile" />
+		</copy>
+	</target>
+	<target name="copyService">
+		<copy todir="${service_dir}" flatten="true">
+			<fileset refid="serviceJarFile" />
+		</copy>
+	</target>
+
+
+	<target name="build"
+		depends="clean,createWorkdGroup,copyEdm,copyTcpt,copyBcpt,copyService">
+		<tar basedir="${projects_dir}" destfile="${dest_file}" />
+		<delete dir="${projects_dir}" />
+	</target>
+
+	<record name="${LOG_PATH}" loglevel="info" append="true" action="start" />
+</project>

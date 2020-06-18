@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>9FC5DB8325DB6F50D137B2C3468CD55F</UUID>
+  <Target>tc.platform.P_Excel.P_readTextBySheet</Target>
+  <Desp>读入指定工作表内容</Desp>
+  <Group>Excel操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>读入指定工作表内容</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"Excel文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sheetName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"工作表名称"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>cells</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"数据集合,每一项都是一个JavaList，内容顺序为（列标,行标,单元格内容）"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Excel.java</Path>
+</Component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>0E4F1EFE63D3F09D86337CAC3C0A0CFD</UUID>
+  <Target>tc.platform.P_demo.callbackCpt</Target>
+  <Desp>测试循环回调组件</Desp>
+  <Group>cate</Group>
+  <Level>0</Level>
+  <Style>3</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>callbackCpt</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>dict</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/platform/src/main/tcpt/tc/platform/P_demo.java</Path>
+</Component>

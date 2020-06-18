@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C3AF59CB9B9B545C00303FDB52A5C0BE</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.claimTask</Target>
+  <Desp>认领用户任务</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>认领用户任务</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>userId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>taskId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>任务ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

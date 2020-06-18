@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>163CA86C96B59E1F191FF0068B20BB26</UUID>
+  <Target>tc.platform.P_Hibernate.saveOrUpdate</Target>
+  <Desp>添加或更新数据</Desp>
+  <Group>Hibernate操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据实体类添加或更新记录，如果没有记录就添加，有记录就更新</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factoryName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的Factory名,如果为空则从第一个Factory中获取session"</Desc>
+    </Arg>
+    <Arg>
+      <Name>pojo</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>"要添加或者更新对应表的持久化类Object"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"事务提交标识Boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Hibernate.java</Path>
+</Component>

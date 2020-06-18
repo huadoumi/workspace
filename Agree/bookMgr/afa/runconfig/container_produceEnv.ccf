@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<container>
+  <id>181409985</id>
+  <version>1.0.0</version>
+  <name>bookMgr</name>
+  <description>container</description>
+  <startupMode>0</startupMode>
+  <startTimeout>180000</startTimeout>
+  <stopTimeout>60000</stopTimeout>
+  <reportInterval>2000</reportInterval>
+  <isolation>false</isolation>
+  <startUpHookTrades/>
+  <lsrs>
+    <lsr id="1" name="接入适配器">
+      <services>
+        <service id="1" name="Socket接入服务" type="0">
+          <description>Socket接入服务</description>
+          <isLogDump>false</isLogDump>
+          <isolation>false</isolation>
+          <socketOptions>
+            <port>8088</port>
+            <ioEventThreads>0</ioEventThreads>
+            <syncAsyncMode>0</syncAsyncMode>
+            <sessionTimeout>20000</sessionTimeout>
+            <closeImmediately>false</closeImmediately>
+            <lbsHeartbeat>
+              <usable>false</usable>
+              <mode>0</mode>
+              <charset>UTF-8</charset>
+            </lbsHeartbeat>
+            <codec>
+              <agreeHead>false</agreeHead>
+              <factoryClass>cn.com.agree.afa.lsr.service.socket.codec.natp.NATPCodecFactory</factoryClass>
+            </codec>
+            <flowControl>
+              <usable>false</usable>
+              <maxConcurrentRequests>0</maxConcurrentRequests>
+              <whitelist/>
+            </flowControl>
+          </socketOptions>
+        </service>
+      </services>
+      <flowControl>
+        <usable>true</usable>
+        <whitelist/>
+      </flowControl>
+    </lsr>
+  </lsrs>
+  <outs>
+    <out id="1" name="接出适配器">
+      <services/>
+    </out>
+  </outs>
+  <svc>
+    <engineType>1</engineType>
+    <loadType>0</loadType>
+    <hotDeployment>true</hotDeployment>
+    <preloadScript>true</preloadScript>
+    <proxy>false</proxy>
+    <putAppConfigToReq>false</putAppConfigToReq>
+    <scriptPaths/>
+    <dbConnPools>
+      <dbConnPool id="1" name="bookmgr" type="0" encipherVersion="1">
+        <property name="User" value="root"/>
+        <property name="Password" value="ZhtoPG5fv2A="/>
+        <property name="JdbcUrl" value="jdbc:mysql://127.0.0.1:3306/bookmgr"/>
+        <property name="DriverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="InitialPoolSize" value="16"/>
+        <property name="MinPoolSize" value="16"/>
+        <property name="MaxPoolSize" value="48"/>
+        <property name="AcquireIncrement" value="8"/>
+        <property name="AcquireRetryAttempts" value="1"/>
+        <property name="AcquireRetryDelay" value="1000"/>
+        <property name="MaxIdleTime" value="1800"/>
+        <property name="MaxIdleTimeExcessConnections" value="0"/>
+        <property name="MaxConnectionAge" value="0"/>
+        <property name="CheckoutTimeout" value="0"/>
+        <property name="AutoCommitOnClose" value="false"/>
+        <property name="BreakAfterAcquireFailure" value="false"/>
+        <property name="MaxStatements" value="0"/>
+        <property name="MaxStatementsPerConnection" value="0"/>
+        <property name="PropertyCycle" value="0"/>
+        <property name="UnreturnedConnectionTimeout" value="0"/>
+        <property name="NumHelperThreads" value="3"/>
+      </dbConnPool>
+    </dbConnPools>
+    <shareDbConnPools/>
+    <hibernate/>
+<mybatis>
+	<sessionFactory name="bookmgr" id="1" pool="bookmgr">
+		<configuration>
+			<plugins>
+				<plugin interceptor="cn.com.agree.afa.mybatis.plugins.page.PageInterceptor">
+					<property name="helperDialect" value="mysql" />
+				</plugin>
+			</plugins>
+			<environments default="mysql">
+				<environment id="mysql">
+					<transactionManager type="JDBC"></transactionManager>
+				</environment>
+			</environments>
+		</configuration>
+	</sessionFactory>
+</mybatis>
+    <applog>
+      <recordMode>0</recordMode>
+      <traceEnabled>true</traceEnabled>
+      <debugEnabled>true</debugEnabled>
+      <inforEnabled>true</inforEnabled>
+      <errorEnabled>true</errorEnabled>
+      <dumpEnabled>true</dumpEnabled>
+      <verboseEnabled>true</verboseEnabled>
+      <bufferSize>16k</bufferSize>
+      <flushIntervalMills>30000</flushIntervalMills>
+      <maxFileSize>32m</maxFileSize>
+      <maxFileCount>1000</maxFileCount>
+      <dateDirMode>0</dateDirMode>
+      <filterMode>0</filterMode>
+      <autoSensitive>false</autoSensitive>
+      <fileEncoding>utf-8</fileEncoding>
+      <redirectError>false</redirectError>
+      <redundant>false</redundant>
+      <pointInfoLogMode>0</pointInfoLogMode>
+      <backup>false</backup>
+      <provider>cn.com.agree.afa.applog.logger.FileLoggerProvider</provider>
+      <customizedTrades/>
+      <net>
+        <connectTimeout>5000</connectTimeout>
+        <idleTime>60000</idleTime>
+        <connections>10</connections>
+        <ioThreads>0</ioThreads>
+      </net>
+      <async>
+        <useable>false</useable>
+        <corePoolSize>1</corePoolSize>
+        <maximumPoolSize>3</maximumPoolSize>
+        <queueSize>500</queueSize>
+      </async>
+      <kafka>
+        <usable>false</usable>
+        <kafkaProperty/>
+      </kafka>
+    </applog>
+    <threadPool>
+      <corePoolSize>32</corePoolSize>
+      <maxPoolSize>64</maxPoolSize>
+      <keepAliveTime>60000</keepAliveTime>
+      <queueSize>320</queueSize>
+      <adapterThread>
+        <open>false</open>
+        <percentage>0</percentage>
+      </adapterThread>
+    </threadPool>
+    <monitorTrade>
+      <usable>false</usable>
+      <trades/>
+    </monitorTrade>
+    <oneTradeMonitor>
+      <open>false</open>
+      <customizedItems/>
+    </oneTradeMonitor>
+    <atsClient>
+      <callbackWorkers>10</callbackWorkers>
+      <monitor>
+        <protocols/>
+        <server>
+          <enable>true</enable>
+          <ioThreads>1</ioThreads>
+        </server>
+      </monitor>
+    </atsClient>
+  </svc>
+  <dcm>
+    <services/>
+  </dcm>
+  <acf>
+    <services/>
+  </acf>
+  <activiti>
+    <dataSource/>
+  </activiti>
+  <modifyDate>20190909181650</modifyDate>
+</container>

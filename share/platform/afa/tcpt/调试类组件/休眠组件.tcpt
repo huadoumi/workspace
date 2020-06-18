@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>111DD1E70A659B2B8CE29E9313958037</UUID>
+  <Target>tc.platform.P_Debug.sleep</Target>
+  <Desp>休眠组件</Desp>
+  <Group>调试类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sleepTime</Name>
+      <Type>int</Type>
+      <Desc>"休眠时间(秒)"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>处理失败</RET0>
+    <RET1>处理成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Debug.java</Path>
+</Component>

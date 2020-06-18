@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>CAFDEF0C88B1E58FC9D22590713081F3</UUID>
+  <Target>tc.Agree.bookMgr.A_parameterUtils.A_getReminderInfoCacheByTradeCode</Target>
+  <Desp>按渠道交易码缓存提取提示信息</Desp>
+  <Group>参数处理工具</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>channelNo</Name>
+      <Type>String</Type>
+      <Desc>"渠道编号"</Desc>
+    </Arg>
+    <Arg>
+      <Name>channelTradeCode</Name>
+      <Type>String</Type>
+      <Desc>"渠道交易码"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>reminderInfo</Name>
+      <Type>String</Type>
+      <Desc>"提示信息"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\projects\Agree\bookMgr\componentSourceCode\tc\Agree\bookMgr\A_parameterUtils.java</Path>
+</Component>

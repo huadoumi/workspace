@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>479B44BAB1FD25F6DB1830146D207F3A</UUID>
+  <Target>cn.com.agree.afa.jcomponent.PlatformInfo.P_getPlatformVersion</Target>
+  <Desp>获取平台版本</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取平台版本，即version.txt中的内容，没有则返回0.0.0</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>platformVersion</Name>
+      <Type>java.lang.String</Type>
+      <Desc>平台版本</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

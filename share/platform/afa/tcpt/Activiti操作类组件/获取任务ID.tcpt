@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>75E8F1DA6506B039A2C1E154C71D0576</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.getTaskId</Target>
+  <Desp>获取任务ID</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取任务ID</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>task</Name>
+      <Type>org.activiti.engine.task.Task</Type>
+      <Desc>任务</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>taskId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>任务ID</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

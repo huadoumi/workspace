@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>65CBEC3F8D8C97DA71AA749E39631869</UUID>
+  <Target>tc.platform.P_Dict.varCopy</Target>
+  <Desp>容器变量拷贝</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>拷贝映射源容器字典中的变量到目的容器中,例如__SRC__={"key_a1":"value1", "key_a2":"value2"}, __DCT__={}, 当strOrList=[["key_a1", "key_b1"]]时, 则处理后__DCT__={"key_b1":"value1"}; 当strOrList="abkey_a1key_a2"时，则处理后__DCT__={"key_a1":"value1", "key_a2":"value2"}</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__SRC__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"源容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>__DCT__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"目的容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>strOrList</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>"[[\"源key名称\",\"目的key名称\"],...]或字符串;如果strOrList为String类型时,则拷贝strOrList中包含__SRC__中键的部分键值对到__DCT__"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

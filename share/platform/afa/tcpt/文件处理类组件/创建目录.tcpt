@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>B231C9B5D491E2B534BC0A9B56C27ABA</UUID>
+  <Target>tc.platform.P_File.mkdir</Target>
+  <Desp>创建目录</Desp>
+  <Group>文件处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>创建指定目录</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>filePath</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"文件夹字符串"</Desc>
+    </Arg>
+    <Arg>
+      <Name>flag</Name>
+      <Type>int</Type>
+      <Desc>"路径标识，0-Linux系统相对路径，1-绝对路径"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_File.java</Path>
+</Component>

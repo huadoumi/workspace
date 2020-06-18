@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>283D0E3EBA5B56AA7C4444F64B87C2A4</UUID>
+  <Target>tc.platform.P_ObjectTranslator.fillPropsIntoDict</Target>
+  <Desp>填充Bean属性到字典</Desp>
+  <Group>对象转换类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>bean属性的名称作为key，属性值（原封不动）作为value</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>bean</Name>
+      <Type>Object</Type>
+      <Desc>"Bean"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"Dict"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_ObjectTranslator.java</Path>
+</Component>

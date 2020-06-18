@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D4C2A950402E5CD25369DB8743F0086D</UUID>
+  <Target>tc.platform.P_Jdbc.getSequence</Target>
+  <Desp>序列号操作</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>获取数据库中指定sequence的当前值,返回值保存在返回的list[3]中,现仅支持Oracle/DB2/Informix三种数据库,对于Informix,dual表是手工创建的</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的数据库连接池名，如果不填则从第一个连接池中获取连接String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>seqName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"序号名称String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dbType</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"数据库类型String，如：\"ORA\"、\"DB2\"、\"INF\"、\"MYSQL\"、\"SQLSERVER\""</Desc>
+    </Arg>
+    <Arg>
+      <Name>seqLen</Name>
+      <Type>int</Type>
+      <Desc>"序号长度int"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>outname</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"序号的当前值string"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

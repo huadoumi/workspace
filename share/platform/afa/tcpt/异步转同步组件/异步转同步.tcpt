@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2AA87BB81B5EAC04175F838ECF23BA87</UUID>
+  <Target>cn.com.agree.afa.jcomponent.Asyn2Syn.SendReplyMsg</Target>
+  <Desp>异步转同步</Desp>
+  <Group>异步转同步组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>host</Name>
+      <Type>java.lang.String</Type>
+      <Desc>答应接入服务 主机地址</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>答应接入服务 端口</Desc>
+    </Arg>
+    <Arg>
+      <Name>soTimeout</Name>
+      <Type>int</Type>
+      <Desc>通讯超时时间（秒）</Desc>
+    </Arg>
+    <Arg>
+      <Name>seqno</Name>
+      <Type>java.lang.String</Type>
+      <Desc>序列号</Desc>
+    </Arg>
+    <Arg>
+      <Name>reply</Name>
+      <Type>java.lang.String</Type>
+      <Desc>答应字符串</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>47CF4D2E76EEFAFB213C0280358B80DC</UUID>
+  <Target>tc.platform.P_Hibernate.deleteWithClassName</Target>
+  <Desp>用类名删除数据</Desp>
+  <Group>Hibernate操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据实体类名删除记录，data的参数用法：{ "col1":val1, "col2": {"xx":val3,"yy":val4} }；类名可以是包名+类名，如hibernate.table.Usertable；也可以是单独的类名Usertable，使用单独类名时确保classpath中没有其他同名的类</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factoryName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的Factory名,如果为空则从第一个Factory中获取session"</Desc>
+    </Arg>
+    <Arg>
+      <Name>entityClassName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"类名Sring，如：\"hibernate.table.User\"或\"User\""</Desc>
+    </Arg>
+    <Arg>
+      <Name>data</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"表的列名和列值JavaDict，如：{ \"col1\":val1, \"col2\": {\"xx\":val3,\"yy\":val4} }"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"提交标识符boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Hibernate.java</Path>
+</Component>

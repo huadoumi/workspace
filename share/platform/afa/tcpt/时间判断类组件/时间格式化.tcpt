@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C9D9E03CE8C4436519F343D2801F945C</UUID>
+  <Target>tc.platform.P_Time.formatTime</Target>
+  <Desp>时间格式化</Desp>
+  <Group>时间判断类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>时间格式化,sTime:日期 支持格式:115959、11:59:59、11点59分59秒、11 59 59、11/59/59、11-59-59
+sFmt:格式化字符串 支持格式:hh:mm:ss、hh-mm-ss、hh/mm/ss、ss/mm/hh</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sTime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"日期"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sFmt</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"格式化字符串"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"格式化后的时间"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Time.java</Path>
+</Component>

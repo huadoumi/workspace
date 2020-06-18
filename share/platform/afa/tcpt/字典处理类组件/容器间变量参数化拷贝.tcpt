@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>322B6304AF3019B5E289250B437D2565</UUID>
+  <Target>tc.platform.P_Dict.copy</Target>
+  <Desp>容器间变量参数化拷贝</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>拷贝映射字典中的变量到另外一个容器中,可全量拷贝,如果原容器没有的,则跳过不拷贝继续处理下面字典</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__SRC__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"源容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>__DCT__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"目的容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>strOrList</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>"[[\"源key名称\", \"目的key名称\"],...]或字符串,如果strOrList为String类型,则进行匹配拷贝,如果为空则根据深度全量拷贝"</Desc>
+    </Arg>
+    <Arg>
+      <Name>typeList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"拷贝类型[null是基础类型(非JavaList/JavaDict),list是JavaList/JavaDict类型的列表,如果typelist为空JavaList则全量拷贝]"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

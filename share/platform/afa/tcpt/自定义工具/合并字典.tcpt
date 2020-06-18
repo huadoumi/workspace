@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D776FF98771FFB1B7E9C6E7EF8EE8591</UUID>
+  <Target>tc.platform.P_Utils.P_mergeDict</Target>
+  <Desp>合并字典</Desp>
+  <Group>自定义工具</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>合并两个数据字典</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict1</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"字典1"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dict2</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"字典2"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dictName1</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"字典名1"</Desc>
+    </Arg>
+    <Arg>
+      <Name>dictName2</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"字典名2"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"返回字典"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Utils.java</Path>
+</Component>

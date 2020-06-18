@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>AE9A3C01ACD151B4BDC0ACA4E880EC96</UUID>
+  <Target>tc.platform.P_Des.desEncryptAndToDBCS</Target>
+  <Desp>Des加密并拆分单字节</Desp>
+  <Group>Des加解密类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>Des加密并拆分单字节，使得返回的字符串不出现乱码</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>src</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"加密前字符串"</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"密钥"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>str</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"加密后的字符串"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Des.java</Path>
+</Component>

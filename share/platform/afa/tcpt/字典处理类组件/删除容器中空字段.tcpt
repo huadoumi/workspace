@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6A3C1822E7D5D099538DD58F24662651</UUID>
+  <Target>tc.platform.P_Dict.delNull</Target>
+  <Desp>删除容器中空字段</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>删除容器中空字段,空的标准为空字符串或null,例如__REQ__={"key1":null, "key2":"", "key3":null, "key4":"", "key5":"value5"}, 当paramList=["key1", "key2", "key5"]时，其处理后则__REQ__={"key3":null, "key4":"", "key5":"value5"};当paramList=null时,其处理后则__REQ__={"key5":"value5"}</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__REQ__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"请求容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"删除容器中变量的键列表,如果为null则删除容器中所有的"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

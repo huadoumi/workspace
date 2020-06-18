@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>B9E4626000D902D752316A9FB6605946</UUID>
+  <Target>tc.platform.P_Communition.sendReplyMsg</Target>
+  <Desp>异步转同步应答组件</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>Example:P_SendReplyMsg(IP,Port ,tmo ,seqno,pckstr) 注意 如果Port =0 则认为走的是unix 域套接字</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>address</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"IP地址或Unix域套接字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>"端口"</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeOut</Name>
+      <Type>int</Type>
+      <Desc>"通信超时，单位：秒"</Desc>
+    </Arg>
+    <Arg>
+      <Name>seqno</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"异步转同步流水号"</Desc>
+    </Arg>
+    <Arg>
+      <Name>pckStr</Name>
+      <Type>byte[]</Type>
+      <Desc>"答应报文"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>超时异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Communition.java</Path>
+</Component>

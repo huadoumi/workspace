@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2D5298F8E4E961D956D92825D5661A20</UUID>
+  <Target>tc.platform.P_Hibernate.sqlUpdate</Target>
+  <Desp>SQL更新数据</Desp>
+  <Group>Hibernate操作类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>SQL更新数据，更新指定条件指定库表的指定列值，条件信息的用法为：[["列1","=",值,"and"],["列2","=",值2]] = (列1=值1 and 列2=值2)，更新影响的笔数放到list[3]中</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factoryName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的Factory名,如果为空则从第一个Factory中获取session"</Desc>
+    </Arg>
+    <Arg>
+      <Name>tableName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"表名String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>colInfos</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"列信息JavaList，如：[[\"COL1\",VAL1],[\"COL2\",VAL2]]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>condition</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"条件信息JavaList，如：[\"列\",\"=\",值]或者[[\"列1\",\"=\",值1,\"and\"],[\"列2\",\"&lt;\",值2]]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"事务提交标识Boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"更新的行数int"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Hibernate.java</Path>
+</Component>

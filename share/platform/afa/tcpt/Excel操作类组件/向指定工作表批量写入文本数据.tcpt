@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>FD1C9A1C4B62ECB7EE485A12C067A0D7</UUID>
+  <Target>tc.platform.P_Excel.P_writeTextByPatch</Target>
+  <Desp>向指定工作表批量写入文本数据</Desp>
+  <Group>Excel操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>向指定工作表批量写入文本数据</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"Excel文件名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sheetName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"工作表名称"</Desc>
+    </Arg>
+    <Arg>
+      <Name>cells</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"数据集合,每一项都是一个JavaList，内容顺序为（列标,行标,单元格内容）"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Excel.java</Path>
+</Component>

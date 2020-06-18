@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>378762F56B80BFE8513FD889D4401A2F</UUID>
+  <Target>cn.com.agree.afa.jcomponent.RocketMqClient.outCallOrderAsync</Target>
+  <Desp>RocketMQ顺序消息异步接出组件</Desp>
+  <Group>RocketMQ接出组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>1</Type>
+  <CustomedAsyncMode>1</CustomedAsyncMode>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>identifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>RocketMQ接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>byte[]</Type>
+      <Desc>请求报文</Desc>
+    </Arg>
+    <Arg>
+      <Name>messageKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>消息关联Id</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>long</Type>
+      <Desc>响应超时毫秒数</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>future</Name>
+      <Type>cn.com.agree.afa.svc.future.ResponseFuture</Type>
+      <Desc>响应Future</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/lib/afa-jcomponent-2.5.jar</Path>
+</Component>

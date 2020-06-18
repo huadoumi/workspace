@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F2574F1CCA0CBC4FA935FF8343277550</UUID>
+  <Target>tc.platform.P_Communition.getTranslateAddr</Target>
+  <Desp>域名解析</Desp>
+  <Group>渠道通讯类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>域名解析，将域名转换为IP，TCP/IP协议</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ip</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"ip地址或域名"</Desc>
+    </Arg>
+    <Arg>
+      <Name>port</Name>
+      <Type>int</Type>
+      <Desc>"端口"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>realIP</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"ip地址"</Desc>
+    </Arg>
+    <Arg>
+      <Name>realPort</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"端口"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Communition.java</Path>
+</Component>

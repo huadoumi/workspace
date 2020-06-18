@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>BD13F37FC876A54D199EEE07E6454A55</UUID>
+  <Target>tc.platform.P_Dict.getLoopList</Target>
+  <Desp>取循环列表值</Desp>
+  <Group>字典处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>取循环列表值</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>inContext</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"源容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>outContext</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"目的容器"</Desc>
+    </Arg>
+    <Arg>
+      <Name>loopVar</Name>
+      <Type>int</Type>
+      <Desc>"源容器指定的列"</Desc>
+    </Arg>
+    <Arg>
+      <Name>listData</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"源容器到目的容器的映射列表 [[\"源key名称\", \"目的key名称\"],...]"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Dict.java</Path>
+</Component>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C3494391DA5B0503742B49E985C17224</UUID>
+  <Target>tc.platform.P_Mybatis.P_updateByMap</Target>
+  <Desp>字典条件更新</Desp>
+  <Group>Mybatis操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据字典提供的绑定参数更新数据</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factory</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"mybatis工厂，如果为null或空字符串，则取第一个"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sqlName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"接口_id,映射文件中规定的nameSpace+id"</Desc>
+    </Arg>
+    <Arg>
+      <Name>params</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"绑定的参数字典"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlag</Name>
+      <Type>boolean</Type>
+      <Desc>"事务提交标识"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>count</Name>
+      <Type>int</Type>
+      <Desc>"受影响的行数"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>无满足条件记录</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Mybatis.java</Path>
+</Component>

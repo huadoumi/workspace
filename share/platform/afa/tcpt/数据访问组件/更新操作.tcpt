@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>978614CBBEA1B1F9D0CED6A19986650A</UUID>
+  <Target>tc.platform.P_DataAccesser.P_update</Target>
+  <Desp>更新操作</Desp>
+  <Group>数据访问组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>更新操作</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"连接池名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>database</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"数据库名字"</Desc>
+    </Arg>
+    <Arg>
+      <Name>statement</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"更新语句"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>affectedRecords</Name>
+      <Type>int</Type>
+      <Desc>"受影响记录数"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_DataAccesser.java</Path>
+</Component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F47F1390C9175B0EEE0A7FDE6B25B8E4</UUID>
+  <Target>tc.platform.P_Jdbc.preparedExecuteSQL</Target>
+  <Desp>预编译SQL执行</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>用预编译的方式执行传入的SQL语句,执行影响的条数放到返回结果的list[3][0]中</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的数据库连接池名，如果不填则从第一个连接池中获取连接String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sqlstr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"执行的SQL语句String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>values</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"SQL语句中?的值，列中的值顺序要和?的位置对应JavaList，如：[val1,val2...]"</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>boolean</Type>
+      <Desc>"事务提交标识Boolean"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"执行影响的条数int"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

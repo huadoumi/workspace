@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>FE1CD42D1663E3B893ECED55F4895630</UUID>
+  <Target>cn.com.agree.afa.jcomponent.ActivitiOperation.newUser</Target>
+  <Desp>创建并保存用户</Desp>
+  <Group>Activiti操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>创建并保存用户, 用户ID不能为空</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>userId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>firstName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户firstName</Desc>
+    </Arg>
+    <Arg>
+      <Name>lastName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户lastName</Desc>
+    </Arg>
+    <Arg>
+      <Name>passwd</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户密码</Desc>
+    </Arg>
+    <Arg>
+      <Name>email</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户Email邮箱地址</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>user</Name>
+      <Type>org.activiti.engine.identity.User</Type>
+      <Desc>用户对象</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

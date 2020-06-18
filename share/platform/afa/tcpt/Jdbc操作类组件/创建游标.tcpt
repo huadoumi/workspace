@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>4BF8C5D9C7B51A64C6BD461FE12092D6</UUID>
+  <Target>tc.platform.P_Jdbc.createResultSet</Target>
+  <Desp>创建游标</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>创建游标</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的数据库连接池名，如果不填则从第一个连接池中获取连接String"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sql</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"执行的SQL语句"</Desc>
+    </Arg>
+    <Arg>
+      <Name>isReadOnly</Name>
+      <Type>boolean</Type>
+      <Desc>"是否只读"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rs</Name>
+      <Type>java.sql.ResultSet</Type>
+      <Desc>"游标"</Desc>
+    </Arg>
+    <Arg>
+      <Name>rows</Name>
+      <Type>int</Type>
+      <Desc>"总笔数"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>无满足条件记录</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>61912846D5EEF7DACC71E91517A13410</UUID>
+  <Target>tc.bank.B_Amount.B_gatherSubAmount</Target>
+  <Desp>获取子账户余额</Desp>
+  <Group>金额处理类组件</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>sourceList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"子账户余额列表"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>flowAmount</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"活期余额"</Desc>
+    </Arg>
+    <Arg>
+      <Name>fixAmount</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"定期余额"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\bank\componentSourceCode\tc\bank\B_Amount.java</Path>
+</Component>

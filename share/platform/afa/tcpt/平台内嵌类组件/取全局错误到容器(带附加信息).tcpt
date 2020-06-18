@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7C3E280BDFFC61889DCD95CFD87DF272</UUID>
+  <Target>cn.com.agree.afa.jcomponent.GlobalErrorHolder.putGlobalErrorToDictWithAttach</Target>
+  <Desp>取全局错误到容器(带附加信息)</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>取全局错误到容器(带附加信息)</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>装载所要获取的全局错误的JavaDict容器</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorTypeKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误类型对应的关键字Key</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorCodeKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误代码对应的关键字Key</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorMsgKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误信息对应的关键字Key</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorLevelKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误级别对应的关键字Key</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorAttachmentKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>错误附加信息对应的关键字Key</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F76FAD4ECC4F18DAB3F0A54521189A53</UUID>
+  <Target>tc.platform.P_Hibernate.sqlSelect</Target>
+  <Desp>SQL查询数据</Desp>
+  <Group>Hibernate操作类组件</Group>
+  <Level>0</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>原生SQL查询数据，根据sql查询语句获取查询的数据,默认是取所有,可以指定需要获取的行数,list[3]中存放查询到的笔数和数据,格式为:[笔数,所有行的list]</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>factoryName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"指定的Factory名,如果为空则从第一个Factory中获取session"</Desc>
+    </Arg>
+    <Arg>
+      <Name>sql</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"SQL语句"</Desc>
+    </Arg>
+    <Arg>
+      <Name>maxResult</Name>
+      <Type>int</Type>
+      <Desc>"查找的行数int"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>num</Name>
+      <Type>int</Type>
+      <Desc>"查询结果的行数int"</Desc>
+    </Arg>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>"所有的行数据JavaList"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Hibernate.java</Path>
+</Component>

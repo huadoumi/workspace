@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>39CF5D55C32480949137CF6296D3B61F</UUID>
+  <Target>cn.com.agree.afa.jcomponent.TradeInvoker.getDataFromFuture</Target>
+  <Desp>从Future中获取数据</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>当Future已经完成时立即返回结果， 否则同步阻塞直到超时或者Future完成。当超时时间小于等于0时，超时时间为Future的超时时间</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>future</Name>
+      <Type>cn.com.agree.afa.util.future.IFuture</Type>
+      <Desc>future</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutInSecs</Name>
+      <Type>int</Type>
+      <Desc>超时时间（秒）</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>data</Name>
+      <Type>java.lang.Object</Type>
+      <Desc>数据</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>

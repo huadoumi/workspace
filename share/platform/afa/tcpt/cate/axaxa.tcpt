@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>5BAE6D9D073AF727B76B32DC00769687</UUID>
+  <Target>tc.platform.P_demo.P_axax</Target>
+  <Desp>axaxa</Desp>
+  <Group>cate</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>1</Type>
+  <CustomedAsyncMode>1</CustomedAsyncMode>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>ttttt</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>qwer</Name>
+      <Type>java.lang.String</Type>
+      <Desc>qwer</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>aaaa</Name>
+      <Type>java.lang.String</Type>
+      <Desc>aaaaa</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/platform/src/main/tcpt/tc/platform/P_demo.java</Path>
+</Component>

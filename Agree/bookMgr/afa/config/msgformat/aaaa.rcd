@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageMap>
+  <Message ClassName="JsonAnalyzer" Type="JSON报文">
+    <Parameter Name="是否自定义变量名" Value="否"/>
+    <Parameter Name="字符编码" Value="GBK"/>
+  </Message>
+</MessageMap>

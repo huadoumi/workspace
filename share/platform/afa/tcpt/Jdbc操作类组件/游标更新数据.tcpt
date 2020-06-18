@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>452525485949F404668118962C644453</UUID>
+  <Target>tc.platform.P_Jdbc.P_updateResultSet</Target>
+  <Desp>游标更新数据</Desp>
+  <Group>Jdbc操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>通过游标在当前游标位置更新一行数据，入参updateData只需要包含一行数据需要更新的部分即可，其格式为JavaDict，如{columnName:columeValue, columnIndex:columnValue, ...}，其中key可以为表列名或表列索引（索引值从1开始）</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rs</Name>
+      <Type>java.sql.ResultSet</Type>
+      <Desc>"游标"</Desc>
+    </Arg>
+    <Arg>
+      <Name>updateData</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>"更新的数据信息"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Jdbc.java</Path>
+</Component>

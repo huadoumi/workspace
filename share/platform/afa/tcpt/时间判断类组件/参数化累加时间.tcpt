@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3CF46C0A4DCD6CBBA669FFFFD90B7CDF</UUID>
+  <Target>tc.platform.P_Time.formatCalculateTime</Target>
+  <Desp>参数化累加时间</Desp>
+  <Group>时间判断类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据输入的源日期时间,要累加的时间和时间单位进行计算出目标时间,单位支持秒,分钟,小时和天,如果是减少的话则add_time为负数</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>srctime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"源时间(YYYYMMDDHHMMSSxxx,支持8位,14位和20位日期格式)"</Desc>
+    </Arg>
+    <Arg>
+      <Name>addtime</Name>
+      <Type>long</Type>
+      <Desc>"累加的时间"</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeunit</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"时间单位(seconds/minutes/hours/days)"</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dsttime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>"计算出的时间"</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>D:\export\workspace_old\functionModule\technologyComponent\platform\componentSourceCode\tc\platform\P_Time.java</Path>
+</Component>

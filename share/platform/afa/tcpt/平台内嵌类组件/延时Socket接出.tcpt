@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>66D9DEEDC5C3AFCF0DE40CBDC6F64835</UUID>
+  <Target>cn.com.agree.afa.jcomponent.DelaySchedClient.call</Target>
+  <Desp>延时Socket接出</Desp>
+  <Group>平台内嵌类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>9</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>延时接出服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>socketAddress</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>Socket地址[host(String), port(int)]</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestPacket</Name>
+      <Type>byte[]</Type>
+      <Desc>请求报文(byte[])</Desc>
+    </Arg>
+    <Arg>
+      <Name>delayTime</Name>
+      <Type>int</Type>
+      <Desc>延迟发送时间（秒）</Desc>
+    </Arg>
+    <Arg>
+      <Name>retries</Name>
+      <Type>int</Type>
+      <Desc>重试次数(默认为1)</Desc>
+    </Arg>
+    <Arg>
+      <Name>retryInterval</Name>
+      <Type>int</Type>
+      <Desc>重发时间间隔(单位为妙，默认为0)</Desc>
+    </Arg>
+    <Arg>
+      <Name>triggerTradeOnError</Name>
+      <Type>boolean</Type>
+      <Desc>发送失败时是否触发交易</Desc>
+    </Arg>
+    <Arg>
+      <Name>mctc</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>失败时触发的交易[mc, tc]</Desc>
+    </Arg>
+    <Arg>
+      <Name>errorMsg</Name>
+      <Type>byte[]</Type>
+      <Desc>失败时给交易传递的错误信息(byte[])</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path></Path>
+</Component>
