@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <Root>
   <UUID>1E002E4CFBB04C3DB82EB7BD056DC7F2</UUID>
   <DateInfo>
     <CreateDate>2018-07-18 03:43</CreateDate>
-    <ModifyDate>2019-08-28 10:13</ModifyDate>
+    <ModifyDate>2020-06-23 11:03</ModifyDate>
   </DateInfo>
   <NodeMaxnimum>60</NodeMaxnimum>
   <Regulation>
@@ -15,7 +16,7 @@
       <Desp>书籍添加</Desp>
       <Auth>pang</Auth>
       <RefImpl>书籍添加</RefImpl>
-      <ToolTip/>
+      <ToolTip></ToolTip>
       <Remarks>0</Remarks>
       <Skip>
         <Enabled>0</Enabled>
@@ -128,7 +129,7 @@
           <Id>10</Id>
           <Name>异常结束</Name>
           <Desp>异常结束</Desp>
-          <Sql/>
+          <Sql></Sql>
           <Type>4</Type>
           <Target>END</Target>
           <Style>0</Style>
@@ -148,13 +149,13 @@
         </Node>
         <Node>
           <UUID>6A3234574C4A46B1AD61CA70B6C20C35</UUID>
-          <Ref>41FD4EBAC9DA921F0CF79D9F1016BB79</Ref>
+          <Ref>4E0F507E130F40BC2D4948D4BDA99528</Ref>
           <Id>7</Id>
           <Name>预编译数据插入</Name>
           <Desp>新建书籍</Desp>
           <Level>0</Level>
           <Group>Jdbc操作类组件</Group>
-          <Sql/>
+          <Sql></Sql>
           <Type>11</Type>
           <Target>tc.platform.P_Jdbc.preparedInsert</Target>
           <FilePath>/platform/afa/tcpt/Jdbc操作类组件/预编译数据插入.tcpt</FilePath>
@@ -170,7 +171,7 @@
               <Total>0</Total>
             </Codes>
             <Result>1</Result>
-            <Return/>
+            <Return></Return>
             <ReturnList/>
           </Debug>
           <Constraint>
@@ -251,13 +252,13 @@
         </Node>
         <Node>
           <UUID>52BFD18B75494CBF987B278CF73C7DC7</UUID>
-          <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+          <Ref>C5A9D87114D1AF4C8BB14E59894DB444</Ref>
           <Id>8</Id>
           <Name>容器变量赋值</Name>
           <Desp>成功返回</Desp>
           <Level>0</Level>
           <Group>字典处理类组件</Group>
-          <Sql/>
+          <Sql></Sql>
           <Type>11</Type>
           <Target>tc.platform.P_Dict.setValue</Target>
           <FilePath>/platform/afa/tcpt/字典处理类组件/容器变量赋值.tcpt</FilePath>
@@ -273,7 +274,7 @@
               <Total>0</Total>
             </Codes>
             <Result>1</Result>
-            <Return/>
+            <Return></Return>
             <ReturnList/>
           </Debug>
           <Constraint>
@@ -330,7 +331,7 @@
           <Id>9</Id>
           <Name>正常结束</Name>
           <Desp>正常结束</Desp>
-          <Sql/>
+          <Sql></Sql>
           <Type>3</Type>
           <Target>END</Target>
           <Style>0</Style>
@@ -349,13 +350,13 @@
           </Logic>
         </Node>
         <Node>
-          <Ref>C78DA2A0019F0EDEE83BF8805A80D44A</Ref>
+          <Ref>96EE6C5D112777BCAE8E144D89DF26E8</Ref>
           <Id>3</Id>
           <Name>预编译数据查询</Name>
           <Desp>书籍是否存在</Desp>
           <Level>0</Level>
           <Group>Jdbc操作类组件</Group>
-          <Sql/>
+          <Sql></Sql>
           <Type>11</Type>
           <Target>tc.platform.P_Jdbc.preparedSelect</Target>
           <FilePath>/platform/afa/tcpt/Jdbc操作类组件/预编译数据查询.tcpt</FilePath>
@@ -371,7 +372,7 @@
               <Total>0</Total>
             </Codes>
             <Result>1</Result>
-            <Return/>
+            <Return></Return>
             <ReturnList/>
           </Debug>
           <Constraint>
@@ -459,13 +460,13 @@
         </Node>
         <Node>
           <UUID>AE197C1B792D4B6F89069C831B613BF0</UUID>
-          <Ref>B0D211659FF8481224753B1688C5A642</Ref>
+          <Ref>7B8489A2625479C8B44C4119B0902193</Ref>
           <Id>4</Id>
           <Name>预编译数据更新</Name>
           <Desp>书籍数量加一</Desp>
           <Level>0</Level>
           <Group>Jdbc操作类组件</Group>
-          <Sql/>
+          <Sql></Sql>
           <Type>11</Type>
           <Target>tc.platform.P_Jdbc.preparedUpdate</Target>
           <FilePath>/platform/afa/tcpt/Jdbc操作类组件/预编译数据更新.tcpt</FilePath>
@@ -481,7 +482,7 @@
               <Total>0</Total>
             </Codes>
             <Result>1</Result>
-            <Return/>
+            <Return></Return>
             <ReturnList/>
           </Debug>
           <Constraint>
@@ -569,7 +570,7 @@
           <Id>6</Id>
           <Name>正常结束</Name>
           <Desp>正常结束</Desp>
-          <Sql/>
+          <Sql></Sql>
           <Type>3</Type>
           <Target>END</Target>
           <Style>0</Style>
@@ -588,13 +589,13 @@
           </Logic>
         </Node>
         <Node>
-          <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+          <Ref>C5A9D87114D1AF4C8BB14E59894DB444</Ref>
           <Id>5</Id>
           <Name>容器变量赋值</Name>
           <Desp>成功返回</Desp>
           <Level>0</Level>
           <Group>字典处理类组件</Group>
-          <Sql/>
+          <Sql></Sql>
           <Type>11</Type>
           <Target>tc.platform.P_Dict.setValue</Target>
           <FilePath>/platform/afa/tcpt/字典处理类组件/容器变量赋值.tcpt</FilePath>
@@ -610,7 +611,7 @@
               <Total>0</Total>
             </Codes>
             <Result>1</Result>
-            <Return/>
+            <Return></Return>
             <ReturnList/>
           </Debug>
           <Constraint>
@@ -686,7 +687,7 @@
       <Desp>adminValidate</Desp>
       <Level>2</Level>
       <RefImpl>bussCpt.adminValidate</RefImpl>
-      <ToolTip/>
+      <ToolTip></ToolTip>
       <Remarks>0</Remarks>
       <FilePath>/bookMgr/afa/bcpt/bussCpt/adminValidate.bcpt</FilePath>
       <HasSql>false</HasSql>
@@ -734,12 +735,12 @@
       <Desp>服务开始</Desp>
       <Level>1</Level>
       <RefImpl>BankTrade.ServiceStart</RefImpl>
-      <ToolTip/>
+      <ToolTip></ToolTip>
       <Remarks>0</Remarks>
       <FilePath>/bank/afa/bcpt/BankTrade/服务开始.bcpt</FilePath>
       <HasSql>false</HasSql>
       <Constraint>
-        <Location>93,46</Location>
+        <Location>40,40</Location>
         <Size>160,46</Size>
       </Constraint>
       <IsError>0</IsError>
@@ -782,7 +783,7 @@
       <Desp>正常返回处理</Desp>
       <Level>1</Level>
       <RefImpl>BankTrade.SuccessHandle</RefImpl>
-      <ToolTip/>
+      <ToolTip></ToolTip>
       <Remarks>0</Remarks>
       <FilePath>/bank/afa/bcpt/BankTrade/正常返回处理.bcpt</FilePath>
       <HasSql>false</HasSql>
@@ -830,7 +831,7 @@
       <Desp>异常返回处理</Desp>
       <Level>1</Level>
       <RefImpl>BankTrade.ExceptionHandle</RefImpl>
-      <ToolTip/>
+      <ToolTip></ToolTip>
       <Remarks>0</Remarks>
       <FilePath>/bank/afa/bcpt/BankTrade/异常返回处理.bcpt</FilePath>
       <HasSql>false</HasSql>
@@ -878,7 +879,7 @@
       <Desp>服务结束</Desp>
       <Level>1</Level>
       <RefImpl>BankTrade.ServiceEnd</RefImpl>
-      <ToolTip/>
+      <ToolTip></ToolTip>
       <Remarks>0</Remarks>
       <FilePath>/bank/afa/bcpt/BankTrade/服务结束.bcpt</FilePath>
       <HasSql>false</HasSql>
@@ -907,4 +908,16 @@
       <False>0</False>
     </Step>
   </Regulation>
-<ScenePro><Version>1.0.0</Version><Desc>书籍添</Desc><Explode>true</Explode><Timeout>0</Timeout><Priority>0</Priority><Flowctrl>false</Flowctrl><LastModified>2020-04-30 10:14:23</LastModified><HasResponse>true</HasResponse><ExecuteOnServiceStartup>0</ExecuteOnServiceStartup><ExecuteBeforeServiceDestroy>1</ExecuteBeforeServiceDestroy><ExecuteOnWGStartup>0</ExecuteOnWGStartup></ScenePro></Root>
+  <ScenePro>
+    <Version>1.0.0</Version>
+    <Desc>书籍添</Desc>
+    <Explode>true</Explode>
+    <Timeout>0</Timeout>
+    <Priority>0</Priority>
+    <Flowctrl>false</Flowctrl>
+    <HasResponse>true</HasResponse>
+    <ExecuteOnServiceStartup>0</ExecuteOnServiceStartup>
+    <ExecuteBeforeServiceDestroy>1</ExecuteBeforeServiceDestroy>
+    <ExecuteOnWGStartup>0</ExecuteOnWGStartup>
+  </ScenePro>
+</Root>

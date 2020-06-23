@@ -4,7 +4,7 @@
   <UUID>97DA58B0D28447608389B6226CE20CF5</UUID>
   <DateInfo>
     <CreateDate>2020-06-17 15:24</CreateDate>
-    <ModifyDate>2020-06-17 15:25</ModifyDate>
+    <ModifyDate>2020-06-23 11:03</ModifyDate>
   </DateInfo>
   <NodeMaxnimum>1000</NodeMaxnimum>
   <Regulation>
@@ -24,7 +24,7 @@
       </Skip>
       <HasSql>false</HasSql>
       <Constraint>
-        <Location>87,62</Location>
+        <Location>60,60</Location>
         <Size>160,46</Size>
       </Constraint>
       <SourceConnections>

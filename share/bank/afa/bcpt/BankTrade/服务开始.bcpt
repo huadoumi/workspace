@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <Component>
   <Id>1</Id>
   <UUID>CDFAC06D89834875B1F90D7471FB1377</UUID>
@@ -6,9 +7,9 @@
   <Quote>1</Quote>
   <Desp>服务开始</Desp>
   <RefImpl>ServiceStart</RefImpl>
-  <Auth/>
+  <Auth></Auth>
   <ReadOnly>0</ReadOnly>
-  <ToolTip/>
+  <ToolTip></ToolTip>
   <InArgs/>
   <OutArgs/>
   <Implementation>
@@ -67,7 +68,7 @@
         <Branch>1</Branch>
       </Skip>
       <Constraint>
-        <Location>147,120</Location>
+        <Location>140,140</Location>
         <Size>160,46</Size>
       </Constraint>
       <SourceConnections>
@@ -107,7 +108,7 @@
       <Id>12</Id>
       <Name>失败结束</Name>
       <Desp>失败结束</Desp>
-      <Sql/>
+      <Sql></Sql>
       <Type>4</Type>
       <Target>END</Target>
       <Style>0</Style>
@@ -131,13 +132,13 @@
     </Node>
     <Node>
       <UUID>462B47CFFA9A49838097DF47E1910C38</UUID>
-      <Ref>0CFEA39CE10C30E15B0F121A2FABB1F8</Ref>
+      <Ref>A64DDCBF2753E51EA0F2343E5D66D5AF</Ref>
       <Id>8</Id>
       <Name>字符串SWITCH匹配</Name>
       <Desp>报文类型判断</Desp>
       <Level>0</Level>
       <Group>判断语句类组件</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.platform.P_JudgmentStatement.switchCaseFrame</Target>
       <FilePath>/platform/afa/tcpt/判断语句类组件/字符串SWITCH匹配.tcpt</FilePath>
@@ -153,7 +154,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -219,54 +220,54 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>源匹配字符串</Name>
+          <Name>"源匹配字符串"</Name>
           <Key>src</Key>
           <Arg>__REQ__["__PT__"]
 </Arg>          <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式1</Name>
+          <Name>"匹配模式1"</Name>
           <Key>case1</Key>
           <Arg>"SDK"</Arg>
           <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式2</Name>
+          <Name>"匹配模式2"</Name>
           <Key>case2</Key>
           <Arg>"NATP"</Arg>
           <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式3</Name>
+          <Name>"匹配模式3"</Name>
           <Key>case3</Key>
           <Arg>"HTTP"</Arg>
           <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式4</Name>
+          <Name>"匹配模式4"</Name>
           <Key>case4</Key>
           <Arg>"RPC"</Arg>
           <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式5</Name>
+          <Name>"匹配模式5"</Name>
           <Key>case5</Key>
           <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式6</Name>
+          <Name>"匹配模式6"</Name>
           <Key>case6</Key>
           <Level>4</Level>
           <Type>java.lang.String</Type>
         </Arg>
         <Arg>
-          <Name>匹配模式7</Name>
+          <Name>"匹配模式7"</Name>
           <Key>case7</Key>
           <Level>4</Level>
           <Type>java.lang.String</Type>
@@ -286,18 +287,18 @@
     </Node>
     <Node>
       <UUID>51A3F061D3DF4CA789B1CCBFAE2862C8</UUID>
-      <Ref>21C7A2BB42F49E350CF30E77946ECA15</Ref>
+      <Ref>73DB7FA0F471AC893D4D72FBBAFD4196</Ref>
       <Id>9</Id>
       <Name>解析键值对</Name>
       <Desp>SDK拆包</Desp>
       <Level>2</Level>
       <Group>通用业务</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.bank.B_Packages.A_parseKV</Target>
       <FilePath>/bank/afa/tcpt/通用业务/解析键值对.tcpt</FilePath>
       <Style>3</Style>
-      <Tooltip/>
+      <Tooltip></Tooltip>
       <Skip>
         <Enabled>0</Enabled>
         <Branch>1</Branch>
@@ -308,7 +309,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -335,14 +336,14 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>源数据</Name>
+          <Name>"源数据"</Name>
           <Key>source</Key>
           <Arg>__REQ__["__RCVPCK__"]
 </Arg>          <Level>4</Level>
           <Type>Object</Type>
         </Arg>
         <Arg>
-          <Name>容器</Name>
+          <Name>"容器"</Name>
           <Key>container</Key>
           <Arg>__REQ__
 </Arg>          <Level>4</Level>
@@ -363,7 +364,7 @@
       <Id>7</Id>
       <Name>正常结束</Name>
       <Desp>正常结束</Desp>
-      <Sql/>
+      <Sql></Sql>
       <Type>3</Type>
       <Target>END</Target>
       <Style>0</Style>
@@ -387,13 +388,13 @@
     </Node>
     <Node>
       <UUID>63C4DBCEAE81448CA6E3A826697DC86A</UUID>
-      <Ref>0F331BF27E3A346B95526DB32FF48F57</Ref>
+      <Ref>24A0F37830920708EE2AF26AA6695090</Ref>
       <Id>10</Id>
       <Name>NATP拆包</Name>
       <Desp>NATP拆包</Desp>
       <Level>0</Level>
       <Group>渠道通讯类组件</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.platform.P_Communition.natpUnPack</Target>
       <FilePath>/platform/afa/tcpt/渠道通讯类组件/NATP拆包.tcpt</FilePath>
@@ -409,7 +410,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -436,14 +437,14 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>请求容器</Name>
+          <Name>"请求容器"</Name>
           <Key>__REQ__</Key>
           <Arg>__REQ__
 </Arg>          <Level>4</Level>
           <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
         </Arg>
         <Arg>
-          <Name>字符编码</Name>
+          <Name>"字符编码"</Name>
           <Key>encoding</Key>
           <Arg>"UTF-8"</Arg>
           <Level>4</Level>
@@ -461,13 +462,13 @@
     </Node>
     <Node>
       <UUID>A113BBE0479D4EA6A482ABB86DB830F7</UUID>
-      <Ref>CA058E93157D59A705F6E42A7C242DDD</Ref>
+      <Ref>0A5E2FC9A448CDFE068C4FD54DDC4982</Ref>
       <Id>11</Id>
       <Name>HTTP请求报文体拆包</Name>
       <Desp>HTTP请求报文体拆包</Desp>
       <Level>0</Level>
       <Group>渠道通讯类组件</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.platform.P_HttpCodec.unpackRequestBody</Target>
       <FilePath>/platform/afa/tcpt/渠道通讯类组件/HTTP请求报文体拆包.tcpt</FilePath>
@@ -483,7 +484,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -510,14 +511,14 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>请求容器</Name>
+          <Name>"请求容器"</Name>
           <Key>__REQ__</Key>
           <Arg>__REQ__
 </Arg>          <Level>4</Level>
           <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
         </Arg>
         <Arg>
-          <Name>编码方式</Name>
+          <Name>"编码方式"</Name>
           <Key>encoding</Key>
           <Arg>"UTF-8"</Arg>
           <Level>4</Level>
@@ -535,13 +536,13 @@
     </Node>
     <Node>
       <UUID>022629D4CE1B4F6187610376082FF9D7</UUID>
-      <Ref>173514726933AA2ECF4A6F29BCA30A5F</Ref>
+      <Ref>A369FB1622EA662AB414E453693EB670</Ref>
       <Id>4</Id>
       <Name>容器变量删除</Name>
       <Desp>容器变量删除</Desp>
       <Level>0</Level>
       <Group>字典处理类组件</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.platform.P_Dict.delete</Target>
       <FilePath>/platform/afa/tcpt/字典处理类组件/容器变量删除.tcpt</FilePath>
@@ -557,7 +558,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -584,14 +585,14 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>请求容器</Name>
+          <Name>"请求容器"</Name>
           <Key>__REQ__</Key>
           <Arg>__REQ__
 </Arg>          <Level>4</Level>
           <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
         </Arg>
         <Arg>
-          <Name>删除容器中变量的键列表</Name>
+          <Name>"删除容器中变量的键列表"</Name>
           <Key>paramList</Key>
           <Arg>["__RCVPCK__"]</Arg>
           <Level>4</Level>
@@ -609,13 +610,13 @@
     </Node>
     <Node>
       <UUID>158CE63AF1594F0AA3A43CC2265D7C46</UUID>
-      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      <Ref>C5A9D87114D1AF4C8BB14E59894DB444</Ref>
       <Id>5</Id>
       <Name>容器变量赋值</Name>
       <Desp>流水号赋值</Desp>
       <Level>0</Level>
       <Group>字典处理类组件</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.platform.P_Dict.setValue</Target>
       <FilePath>/platform/afa/tcpt/字典处理类组件/容器变量赋值.tcpt</FilePath>
@@ -631,7 +632,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -658,14 +659,14 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>请求容器</Name>
+          <Name>"请求容器"</Name>
           <Key>inContext</Key>
           <Arg>__RSP__
 </Arg>          <Level>4</Level>
           <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
         </Arg>
         <Arg>
-          <Name>变量赋值列表，如：[["key1",value1],["key2",value2],["key3",value3]...]</Name>
+          <Name>"变量赋值列表，如：[[\"key1\",value1],[\"key2\",value2],[\"key3\",value3]...]"</Name>
           <Key>paramList</Key>
           <Arg>[
 ["交易流水号",__REQ__["__TRACEID__"]]
@@ -685,18 +686,18 @@
     </Node>
     <Node>
       <UUID>E40D1FCCFB514592A63654F6185B710C</UUID>
-      <Ref>AB68BDAFF5F697214DA9DFD8278F2672</Ref>
+      <Ref>06BEA1EDC70013FF6F63B022C1031E8B</Ref>
       <Id>6</Id>
       <Name>信息日志</Name>
       <Desp>请求容器信息日志</Desp>
       <Level>0</Level>
       <Group>日志操作类组件</Group>
-      <Sql/>
+      <Sql></Sql>
       <Type>11</Type>
       <Target>tc.platform.P_Logger.info</Target>
       <FilePath>/platform/afa/tcpt/日志操作类组件/信息日志.tcpt</FilePath>
       <Style>3</Style>
-      <Tooltip/>
+      <Tooltip></Tooltip>
       <Skip>
         <Enabled>0</Enabled>
         <Branch>1</Branch>
@@ -707,7 +708,7 @@
           <Total>0</Total>
         </Codes>
         <Result>1</Result>
-        <Return/>
+        <Return></Return>
         <ReturnList/>
       </Debug>
       <Constraint>
@@ -734,7 +735,7 @@
       </Terminals>
       <InArgs>
         <Arg>
-          <Name>日志信息(JavaList/String)</Name>
+          <Name>"日志信息(JavaList/String)"</Name>
           <Key>strOrList</Key>
           <Arg>__REQ__
 </Arg>          <Level>4</Level>

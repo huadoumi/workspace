@@ -41,7 +41,7 @@ public class P_demo {
 		/**
 		 * 这是一个测试
 		 */
-		System.out.println("hello world");
+		System.out.println("hello world，pang");
 		// 你好
 		return TCResult.newSuccessResult();
 	}
