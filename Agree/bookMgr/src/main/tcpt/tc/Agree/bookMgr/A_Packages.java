@@ -53,6 +53,10 @@ public class A_Packages {
 		}
 		return TCResult.newSuccessResult();
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 
 	
 }
